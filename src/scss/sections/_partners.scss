@@ -1,0 +1,72 @@
+.partners{
+	position: relative;
+	z-index: 1;
+	.move-right-animate{
+		position: relative;
+		&:after{
+			content:'';
+			width: remy(124);
+			height: remy(50);
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: -5px;
+			z-index: 2;
+			transform: translateY(-50%);
+			background: linear-gradient(270deg, #ebeff2 0%, rgba(235, 239, 242, 0) 100%);
+		}
+	}
+	.h-40.mb-80{
+		margin-bottom: 30px;
+		@media (min-width: 1200px) {
+			margin-bottom: 80px;
+		}
+	}
+}
+.move-right-animate,.move-left-animate {
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .move-right-animate-content,  .move-left-animate-content {
+	display: flex;
+	gap: 4rem;
+	min-width: max-content;
+  }
+  // 🔄 Движение влево (по умолчанию)
+  .move-left {
+	animation: move-left 40s linear infinite;
+  }
+  
+  // 🔄 Движение вправо (новый класс!)
+  .move-right {
+	animation: move-right 40s linear infinite;
+  }
+  
+  .partners.partners--large{
+	.move-left {
+		animation: move-left 90s linear infinite;
+	  }
+	  
+	  // 🔄 Движение вправо (новый класс!)
+	  .move-right {
+		animation: move-right 90s linear infinite;
+	  }
+  }
+  @keyframes move-left {
+	0% {
+	  transform: translateX(0%);
+	}
+	100% {
+	  transform: translateX(-50%);
+	}
+  }
+  
+  @keyframes move-right {
+	0% {
+	  transform: translateX(-50%);
+	}
+	100% {
+	  transform: translateX(0%);
+	}
+  }

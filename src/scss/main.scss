@@ -1,0 +1,33 @@
+$primary: #F5802A;
+// @import "bootstrap/scss/bootstrap";
+@import "base/_var";
+@import "base/_base";
+@import "base/_typography";
+@import "base/_breadcrumb";
+@import "base/_icons";
+@import "base/_buttons";
+@import "base/_form";
+@import "base/_swiper";
+@import "sections/_header";
+@import "sections/_hero-main";
+@import "sections/_hero-inner";
+@import "sections/_business-support-hero";
+
+@import "sections/_partners";
+@import "sections/_our-service";
+@import "sections/_aboutus";
+@import "sections/_our-benefits";
+@import "sections/_form-accent.scss";
+@import "sections/_review.scss";
+@import "sections/_sertificates.scss";
+@import "sections/_contact-form.scss";
+@import "sections/_footer.scss";
+
+@import "sections/_cookie.scss";
+
+
+
+
+
+//ui
+@import "ui/_ui-navigation"; 

@@ -1,0 +1,16 @@
+.sertificates-swiper {
+	.swiper-slide{
+		width: remy(318)!important;
+	}
+}
+.sertificate-item{
+border: 2px solid #dee5eb;
+border-radius: remy(20);
+overflow: hidden;
+}
+
+.sertificate-item img{
+	width: remy(318);
+	height: remy(440);
+	object-fit: cover;
+}

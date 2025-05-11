@@ -1,0 +1,17 @@
+.swiper-button-next, .swiper-button-prev{
+	position: relative;
+	inset:0;
+	width: remy(40);
+	height: remy(40);
+	border-radius: 50%;
+	background-color: var(--primary);
+	color: white;
+	margin-top: 0;
+	&:after{font-size: remy(20);}
+
+}
+.swiper-nav{
+	justify-content: center;
+	column-gap: remy(20);
+	margin-top: remy(30);
+}

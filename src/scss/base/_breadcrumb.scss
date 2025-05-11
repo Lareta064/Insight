@@ -1,0 +1,4 @@
+.breadcrumb-list .breadcrumb-item + .breadcrumb-item::before {
+  content: "\2022"; /* или "." */
+}
+.breadcrumb-item.active{color: #F04020;}

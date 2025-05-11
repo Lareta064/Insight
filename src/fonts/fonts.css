@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'Actay';
+	src: url('Actay-Regular.woff2') format('woff2'), url('Actay-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Actay';
+	src: url('Actay-RegularItalic.woff2') format('woff2'), url('Actay-RegularItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Actay Wide';
+	src: url('ActayWide-Bold.woff2') format('woff2'), url('ActayWide-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Actay Wide';
+	src: url('ActayWide-BoldItalic.woff2') format('woff2'), url('ActayWide-BoldItalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('SpaceGrotesk-Light.woff2') format('woff2'), url('SpaceGrotesk-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('SpaceGrotesk-Light.woff2') format('woff2'), url('SpaceGrotesk-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('SpaceGrotesk-Regular.woff2') format('woff2'), url('SpaceGrotesk-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('SpaceGrotesk-Medium.woff2') format('woff2'), url('SpaceGrotesk-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Space Grotesk';
+	src: url('SpaceGrotesk-Bold.woff2') format('woff2'), url('SpaceGrotesk-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat-SemiBold.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}

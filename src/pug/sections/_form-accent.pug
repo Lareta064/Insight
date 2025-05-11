@@ -1,0 +1,20 @@
+section.feedback
+	.container
+		form.feedback-form.d-flex.accent-form
+			.feedback-form__title
+				.h-40.txt-white Поможем решить все вопросы
+				p Оставьте ваши контакты и наши специалисты свяжутся с вами
+			.feedback-form__body
+				.form-item.mb-40
+					input.form-control(type="text" placeholder="Ваше имя")
+				.form-item.mb-40
+					input.form-control(type="text" placeholder="Ваш телефон")
+				
+				.form-agree.text-white.form-check.mb-40
+					input.form-check-input#flexCheckDefault(type='checkbox')
+					label.form-check-label(for='flexCheckDefault') Я ознакомился и согласен с #[a.text-white.fw-bold(href="#" ) условиями обработки персональных данных]
+				
+				.form-btn.d-flex.justify-content-center
+					button.btn.btn-light.w-lg-100(type="submit") Отправить
+
+

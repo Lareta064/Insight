@@ -1,0 +1,33 @@
+.service-card{
+	transition: .3s;
+	display: flex;
+	flex-direction: column;
+	&:hover{
+		background-color: var(--primary);
+		& *{color: white!important; transition: .3s; }
+	}
+	&>*{width: 100%;}	
+	.h-32{margin-bottom: remy(28);}
+	ul{margin-bottom: remy(8);margin-bottom: remy(30); padding-left: remy(20); flex-grow: 1;}
+	// @media (min-width: 1200px) {
+	// 	width: calc(50% - remy(4));
+	// }
+}
+.our-services{
+	
+	@media (min-width: 1440px) {
+	background-image: url(../img/bg-services.webp);
+	background-position: right 0;
+	background-repeat: no-repeat;
+	background-size: remy(206);
+	}
+}
+.our-services-content{
+	padding-top: remy(12);
+	display: flex;
+	row-gap: remy(4);
+	@media (min-width: 992px) {
+		row-gap: remy(8);
+	}
+	
+}

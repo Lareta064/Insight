@@ -1,0 +1,62 @@
+.statistic-card{
+	padding-block: remy(37) remy(35);
+	border-left: 4px solid var(--primary);
+	padding-inline: remy(20);
+	&__txt{
+		font-weight: 400;
+		font-size: remy(18);
+		color: #616161;
+	}
+	.txt-80{
+		display: flex;
+		align-items: center; column-gap:remy(8);
+		span{line-height: 1;}
+	}
+	.anim-counter{min-width: remy(110);}
+	@media (min-width: 992px) {
+		padding-block: remy(42) remy(40);
+		border-right: 1px solid #b5b5b5;
+		border-left:0;
+		padding-left: remy(34);
+		.anim-counter{min-width: remy(170);}
+		&__txt{
+			font-size: remy(22);
+			margin-top: remy(14);
+			
+		}
+		.txt-80{column-gap:remy(16);}
+	}
+	@media (min-width: 1200px) {
+		padding-left: remy(54);
+	}
+}
+.statistic-card:first-child{
+	@media (min-width: 992px) {
+		padding-left: 0;
+	}
+}
+.statistic-card:last-child{
+	
+	svg{position: relative; width: remy(45);
+		height: remy(45);}
+	@media (min-width: 768px) {
+		border-right: 0;
+	}
+	@media (min-width: 1200px) {
+		svg{position: relative; top:-8px;
+			width: remy(69);
+			height: remy(69);
+		}
+	}
+	
+}
+.anim-counter{font-variant-numeric: tabular-nums;}
+.our-benefits-content.d-grid{
+	grid-template-columns: 1fr;
+	row-gap:remy(16);
+	margin-top: remy(30);
+	@media (min-width: 992px) {
+		grid-template-columns: 40fr 48fr 40fr;
+		column-gap: remy(20);
+	}
+}

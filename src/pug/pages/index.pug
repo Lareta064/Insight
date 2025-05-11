@@ -1,0 +1,17 @@
+extends ../layouts/layout.pug
+
+block content
+	.start-page(style="background: white;")
+		h1 INSIGHT
+		.start-page__cards
+			//- a(href="./ui/colors.html") UI-KIT PAGE
+			
+			a(href="home.html")
+				span Главная
+			a(href="business-support.html" target="_blank")
+				span Открытие и сопровождение бизнеса
+			
+			
+
+block variables
+	-var title = "INSIGHT";

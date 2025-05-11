@@ -1,0 +1,201 @@
+extends ../layouts/layout.pug
+
+block content
+	header.header#header.flex-shrink-0
+		.container
+			nav.navbar.navbar-expand-xxl.py-0#nav-cont
+				.container-fluid.nav-content
+					a.navbar-brand.flex-shrink-0(href='#!')
+						img#logo-img.logo-img(src='https://in-sight.ae/img/logo.svg' alt='logo' width="121" height="81")
+					button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='true' aria-label='Toggle navigation')
+						span.navbar-toggler-icon
+					.navbar-collapse.collapse#navbarSupportedContent.flex-grow-1.justify-content-between
+						ul.navbar-nav.d-flex.gap-4
+							li.nav-item
+								a.nav-link.txt-20( href='#!') О нас
+								
+							li.nav-item
+								a.nav-link.txt-20( href='#!') Партнерам
+								
+							li.nav-item
+								a.nav-link.txt-20( href='#!') Контакты
+							
+							
+							li.nav-item.dropdown
+								a.nav-link.dropdown-toggle.txt-20(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false').
+									Услуги 
+								
+								ul.dropdown-menu
+									li
+										a.dropdown-item( href='#!') Главная
+									
+									li
+										a.dropdown-item.text-wrap( href='#!') Открытие и релокация бизнеса
+									li
+										a.dropdown-item.text-wrap( href='#!') Бухгалтерские услуги
+									li
+										a.dropdown-item.text-wrap( href='#!') Корпоративный и личный банковский счет
+									li
+										a.dropdown-item.text-wrap( href='#!') Юридические услуги
+									li
+										a.dropdown-item.text-wrap( href='#!') Оформление резидентской визы ОАЭ
+									li
+										a.dropdown-item.text-wrap( href='#!') Легализация документов
+									li
+										a.dropdown-item.text-wrap( href='#!') Услуги Real Estate
+									li
+										a.dropdown-item.text-wrap( href='#!') Денежные переводы
+							
+							
+								
+						.header-column.d-flex.flex-column.flex-lg-row
+							a.fw-bold.text-decoration-none.link-primary.phone-link(href='tel:+971521258037' target='_blank') +971 521 25 8037
+							.d-flex.align-items-center.gap-4
+								.dropdown.lang-dropdown
+									a.d-flex.dropdown-toggle.align-items-center.fw-bold.text-decoration-none.link-primary(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+										img(src='./img/ru.webp', srcset='./img/ru@2x.webp 2x' width='40' height='27' loading='lazy' alt='img')
+									ul.dropdown-menu.dropdown-menu-end
+										li.list-unstyled.text-center.bg-primary
+											a.dropdown-item.link-light.fw-bold(data-lang='ru' href='#') RU
+										li.list-unstyled.text-center
+											a.dropdown-item(data-lang='en' href='#') EN
+				
+								button.btn.btn-primary(type='button') Оставить заявку
+	//MAIN
+	main.main-column.d-flex.flex-column
+		//HERO
+		section.hero.hero--main
+			.container
+				.row.align-items-center
+					.col-12.col-lg-6.col-xxl-5.hero-content
+						h1.h-48.mb-50  Регистрация<br>компаний в ОАЭ
+						.hero-text.txt-20
+							p Открытие и сопровождение бизнеса в&nbsp;Объединенных Арабских Эмиратах
+							p Бухгалтерское сопровождение фирм, регистрации&nbsp;фрашиз, открытие счетов и виз, оформление и продление лицензий
+						
+						//hero-img
+						.hero-img-group
+							img.hero-img.round-img.object-fit-cover(src='./img/hero.webp', srcset='./img/hero@2x.webp 2x' width='784' height='531' loading='lazy' alt='img')
+							
+							//benefit-label
+							.benefit-chips.d-flex.align-items-center
+								.benefit-chips__img
+									img(src='./img/hero-icon.webp', srcset='./img/hero-icon@2x.webp 2x' width='43' height='53' loading='lazy' alt='img')
+								.benefit-chips__txt
+									.fw-bold Insight в Дубае!
+									p.mb-0 Мы расширяемся, поэтому теперь мы предоставляем бизнес-услуги  в Объединённых Арабских Эмиратах
+							
+							//benefit-label
+							.benefit-chips.d-flex.align-items-center
+								.benefit-chips__img
+									img(src='./img/hero-icon2.webp', srcset='./img/hero-icon2@2x.webp 2x' width='83' height='53' loading='lazy' alt='img')
+								.benefit-chips__txt
+									.fw-bold Insight в Дубае!
+									p.mb-0 Мы расширяемся, поэтому теперь мы предоставляем бизнес-услуги  в Объединённых Арабских Эмиратах
+							
+							//benefit-label
+							.benefit-chips.d-flex.align-items-center
+								.benefit-chips__img +250
+									
+								.benefit-chips__txt
+									.fw-bold Успешных<br>проектов
+									
+						.btn-wrapper.d-flex.lg-d-block
+							button.btn.btn-primary.w-lg-100(type='button') Оставить заявку
+		include ../sections/_partners-short
+		include ../sections/_our-service
+		include ../sections/_partners-large
+		include ../sections/_form-accent
+		include ../sections/_our-benefits
+		include ../sections/_aboutus
+		include ../sections/_review
+		include ../sections/_sertificates
+		include ../sections/_contacts-form
+	
+	//FOOTER
+	footer.footer
+		.container
+			//FOOTER TOP
+			.footer-content.row
+				.col-lg-3.footer-column.d-flex.justify-content-center.d-lg-block.order-1
+					.footer-logo
+						img(src='https://in-sight.ae/img/logo2.svg' width='150' height='100' loading='lazy' alt='img')
+					p.txt-14.d-none.d-xl-block All rights reserved<br>Insight Business Services, 2025
+				
+				.col-lg-2.order-2
+					nav.footer-menu
+						a(href="#!") Услуги
+						a(href="#!") Контакты
+						a(href="#!") О нас
+
+				.col-lg-4.col-xl-3.offset-xl-1.footer-address.order-4.order-lg-3
+					address.text-white.
+						Office 813, B2B Tower, Marasi Drive,
+						Business Bay, Dubai, UAE
+					p.text-white.mb-1 PO Box: №390154
+					a(href="#!").txt-14.link-primary Показать на карте
+				
+				.col-lg-3.order-3
+					.social-box.d-flex.flex-wrap
+						a(href="#!").social-item
+							svg(width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg')
+								path(d='M4.43038 1.89648C4.0066 1.89648 3.60018 2.06483 3.30052 2.36449C3.00087 2.66415 2.83252 3.07057 2.83252 3.49435C2.83252 3.91813 3.00087 4.32455 3.30052 4.62421C3.60018 4.92386 4.0066 5.09221 4.43038 5.09221C4.85416 5.09221 5.26058 4.92386 5.56024 4.62421C5.8599 4.32455 6.02825 3.91813 6.02825 3.49435C6.02825 3.07057 5.8599 2.66415 5.56024 2.36449C5.26058 2.06483 4.85416 1.89648 4.43038 1.89648ZM2.92651 6.4081C2.90158 6.4081 2.87768 6.418 2.86005 6.43563C2.84242 6.45325 2.83252 6.47716 2.83252 6.50209V16.2773C2.83252 16.3291 2.87463 16.3712 2.92651 16.3712H5.93425C5.95918 16.3712 5.98309 16.3613 6.00072 16.3437C6.01834 16.3261 6.02825 16.3022 6.02825 16.2773V6.50209C6.02825 6.47716 6.01834 6.45325 6.00072 6.43563C5.98309 6.418 5.95918 6.4081 5.93425 6.4081H2.92651ZM7.81409 6.4081C7.78916 6.4081 7.76526 6.418 7.74763 6.43563C7.73 6.45325 7.7201 6.47716 7.7201 6.50209V16.2773C7.7201 16.3291 7.76221 16.3712 7.81409 16.3712H10.8218C10.8468 16.3712 10.8707 16.3613 10.8883 16.3437C10.9059 16.3261 10.9158 16.3022 10.9158 16.2773V11.0137C10.9158 10.6398 11.0644 10.2812 11.3288 10.0168C11.5932 9.75236 11.9518 9.60382 12.3257 9.60382C12.6996 9.60382 13.0582 9.75236 13.3226 10.0168C13.587 10.2812 13.7356 10.6398 13.7356 11.0137V16.2773C13.7356 16.3291 13.7777 16.3712 13.8296 16.3712H16.8373C16.8622 16.3712 16.8862 16.3613 16.9038 16.3437C16.9214 16.3261 16.9313 16.3022 16.9313 16.2773V9.79557C16.9313 7.97062 15.3447 6.54345 13.5288 6.70812C12.967 6.75966 12.4167 6.89869 11.8979 7.12018L10.9158 7.54126V6.50209C10.9158 6.47716 10.9059 6.45325 10.8883 6.43563C10.8707 6.418 10.8468 6.4081 10.8218 6.4081H7.81409Z' fill='currentColor')
+						
+						a(href="").social-item
+							svg(width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg')
+								path(fill-rule='evenodd' clip-rule='evenodd' d='M3.49186 0.160156C2.56476 0.160156 1.67562 0.528352 1.01994 1.18378C0.364255 1.83921 -0.00428264 2.72822 -0.00463867 3.65531V12.9793C-0.00463867 13.9066 0.363741 14.796 1.01946 15.4517C1.67518 16.1074 2.56453 16.4758 3.49186 16.4758H12.8159C13.743 16.4755 14.632 16.1069 15.2874 15.4512C15.9428 14.7956 16.311 13.9064 16.311 12.9793V3.65531C16.3107 2.72845 15.9423 1.83965 15.2869 1.18426C14.6315 0.528865 13.7427 0.160512 12.8159 0.160156H3.49186ZM13.8216 3.66069C13.8216 3.92777 13.7155 4.18392 13.5266 4.37278C13.3378 4.56164 13.0816 4.66774 12.8145 4.66774C12.5474 4.66774 12.2913 4.56164 12.1024 4.37278C11.9136 4.18392 11.8075 3.92777 11.8075 3.66069C11.8075 3.3936 11.9136 3.13745 12.1024 2.94859C12.2913 2.75973 12.5474 2.65363 12.8145 2.65363C13.0816 2.65363 13.3378 2.75973 13.5266 2.94859C13.7155 3.13745 13.8216 3.3936 13.8216 3.66069ZM8.1552 5.52441C7.41448 5.52441 6.7041 5.81866 6.18032 6.34243C5.65655 6.8662 5.3623 7.57659 5.3623 8.31731C5.3623 9.05804 5.65655 9.76842 6.18032 10.2922C6.7041 10.816 7.41448 11.1102 8.1552 11.1102C8.89593 11.1102 9.60631 10.816 10.1301 10.2922C10.6539 9.76842 10.9481 9.05804 10.9481 8.31731C10.9481 7.57659 10.6539 6.8662 10.1301 6.34243C9.60631 5.81866 8.89593 5.52441 8.1552 5.52441ZM4.01822 8.31731C4.01822 7.22047 4.45394 6.16856 5.22952 5.39297C6.0051 4.61739 7.05702 4.18167 8.15386 4.18167C9.2507 4.18167 10.3026 4.61739 11.0782 5.39297C11.8538 6.16856 12.2895 7.22047 12.2895 8.31731C12.2895 9.41416 11.8538 10.4661 11.0782 11.2417C10.3026 12.0172 9.2507 12.453 8.15386 12.453C7.05702 12.453 6.0051 12.0172 5.22952 11.2417C4.45394 10.4661 4.01822 9.41416 4.01822 8.31731Z' fill='currentColor')
+						
+						a(href="#!").social-item
+							svg.bi.bi-whatsapp(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(d='M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232')
+
+						a(href="#!").social-item
+							svg.bi.bi-telegram(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09')
+						a(href="#!").social-item
+							svg.bi.bi-telephone-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(fill-rule='evenodd' d='M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z')
+						
+						a(href="#!").social-item
+							svg.bi.bi-envelope-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+								path(d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z')
+	
+			.footer-bottom.row
+				.col-lg-4.d-flex
+					a(href="").link-primary Политика обработки персональных данных
+				.col-lg-4.d-flex
+					a(href="").link-primary Правила оказания услуг
+				.col-lg-4.d-flex
+					a(href="document.pdf" download).link-primary.d-flex.align-items-center.gap-2
+						svg.bi.bi-filetype-pdf(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16')
+							path(fill-rule='evenodd' d='M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z')
+						span Скачать презентацию
+
+	//cookie
+	.cookie-popup
+		.d-flex.flex-column
+			.h-28 Cookie settings
+			
+			p.txt-12.mb-0 We use cookies to provide you with the best possible experience. They also allow us to analyze user behavior in order to constantly improve the website for you.
+			
+			.cookie-popup-buttons.d-flex
+				button.btn.btn-primary Accept All
+				button.btn.btn-light-blue Accept Selection
+				button.btn.btn-grey Accept All
+			
+			.cookie-popup-row.d-flex
+				.d-flex.gap-2.txt-12.cookie-popup-direction
+					span
+					| Necessary
+				.d-flex.gap-2.txt-12.cookie-popup-direction
+					span
+					| Analytics
+				.d-flex.gap-2.txt-12.cookie-popup-direction
+					span
+					| Preferences
+				.d-flex.gap-2.txt-12.cookie-popup-direction
+					span
+					| Marketing
+
+block variables
+	-var title = "INSIGHT";
