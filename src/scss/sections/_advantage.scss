@@ -1,0 +1,46 @@
+.advantage-card{
+	padding: remy(20);
+	border-left: 4px solid var(--primary);
+	flex:1 1 0;
+	&__title{
+		font-family: var(--second-family);
+		font-weight: 700;
+		line-height: 167%;
+		font-size: remy(40);
+		color: var(--primary);
+		@media (min-width: 768px) {
+		  font-size: 1.5rem;
+		}
+		@media (min-width: 1200px) {
+		  font-size: 3rem;
+		}
+	}
+	.txt-16{
+		color: #616161;
+		margin-bottom: 0;
+		font-family: var(--third-family);
+		font-size: remy(12);
+		line-height: 1.2;
+		@media (min-width: 1024px) {
+		  font-size:reny(14);
+		}
+		@media (min-width: 1200px) {
+		  font-size: 1rem;
+		}
+	}
+	@media (min-width: 768px) {
+	padding: remy(20) remy(10);
+	}
+	@media (min-width: 1024px) {
+	padding: remy(20) remy(20);
+	}
+}
+.advantage-wrapper{
+	
+	flex-direction: column;
+	row-gap:remy(10);
+	@media (min-width: 768px) {
+	  flex-direction: row;column-gap:remy(22);
+	}
+
+}

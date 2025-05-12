@@ -1,5 +1,5 @@
 
-.h-48, .h-40, .h-32 {
+.h-48, .h-40, .h-32, .h-52 {
 	font-family: "Actay Wide";
 	font-weight: 700;
 	color: #000E17;
@@ -24,12 +24,14 @@
 	font-size: remy(22);
 	line-height: 1.20;
 	color: #212529;
-	@media (min-width: 1200px) {
+	@media (min-width: 1440px) {
+		font-size: remy(24);
+	}
+	@media (min-width: 1920px) {
 		font-size: remy(28);
 	}
 }
-.hg-52{
-	font-family: var(--font5);
+.h-52{
 	font-weight: 700;
 	line-height: 1.06;
 	font-size: 28px;
@@ -70,6 +72,7 @@
 		line-height: 1.5;
 	}
 }
+.txt-16{font-size: 1rem;}
 .txt-20{
 	font-size: remy(14);
 	@media (min-width: 1200px) {
@@ -97,6 +100,8 @@
 .lh-150{
 	line-height: 1.5;
 }
+
+.fw-600{font-weight: 600;}
 .text-muted{color: #747985!important;}
 .text-grey{
 	color: #212529!important;
@@ -186,4 +191,7 @@
   }
   .social-item:hover{
 	color: white;
+  }
+  .section-header-group{
+	.h-40{line-height: 122%;}
   }

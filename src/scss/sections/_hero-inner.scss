@@ -41,6 +41,7 @@
 	}
 }
 .hero.inner-hero{
+	.breadcrumb-list{margin-bottom: remy(30);}
 	.hero-content{
 		width: 100%;
 		max-width: remy(600);
@@ -57,12 +58,14 @@
 			margin-top: 0;
 			position: absolute;
 			top: 50%;
+			&:after{width: 80%;}
 			.hero-img{height: 100%; min-height: remy(430);}
 		}
 		.hero-content{width: 50%;}
 	}
 	@media (min-width: 1200px) {
 		.hero-content .hero-text{font-size: 1rem;}
+		.hero-img-group{transform: translate(144%, -50%);}
 		.hero-img-group .hero-img{ max-height: remy(531);}
 	}
 }

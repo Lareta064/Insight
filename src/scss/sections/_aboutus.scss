@@ -1,11 +1,19 @@
 .benefit-card{
 	background-color: rgba(255,255,255, .4);
 	padding:  remy(18) remy(16);
-	border: 2px solid #e6e8ee;
+	border: 2px solid #dee5eb;
+	
 	width: 100%;
 	max-width: remy(324);
+	// min-width: remy(324);
 	flex-shrink: 0;
-	
+	.fw-600{
+		
+		font-weight: 600;
+		line-height: 120%;
+		color: #333;
+		font-family: var(--third-family);
+	}
 	&:last-child{margin-right: remy(8);}
 	&__icon{
 		width: remy(40);
@@ -35,20 +43,21 @@
 		}
 	}
 	.h-28 {margin-bottom: remy(20);}
+	
 	@media (min-width: 1200px) {
-		// max-width: remy(428);
-		max-width: unset;
-		flex:1;
+		max-width: remy(428);
+		
+		 flex: 1 1 0;
 		padding: remy(28) remy(24);
-		grid-column: span 4;
+		// grid-column: span 4;
 		&:last-child{margin-right: 0;}
 	}
 }
 .aboutus-content{
 	column-gap:remy(12);
-	display: flex;
-	@media (min-width: 1200px) {
-		// grid-template-columns: repeat(12, 1fr);
+	
+	@media (min-width: 1440px) {
+		grid-template-columns: repeat(12, 1fr);
 		
 		column-gap:remy(16);
 	}
