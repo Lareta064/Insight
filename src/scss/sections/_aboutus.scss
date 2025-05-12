@@ -36,7 +36,9 @@
 	}
 	.h-28 {margin-bottom: remy(20);}
 	@media (min-width: 1200px) {
-		max-width: remy(428);
+		// max-width: remy(428);
+		max-width: unset;
+		flex:1;
 		padding: remy(28) remy(24);
 		grid-column: span 4;
 		&:last-child{margin-right: 0;}
@@ -44,8 +46,10 @@
 }
 .aboutus-content{
 	column-gap:remy(12);
+	display: flex;
 	@media (min-width: 1200px) {
-		grid-template-columns: repeat(12, 1fr);
+		// grid-template-columns: repeat(12, 1fr);
+		
 		column-gap:remy(16);
 	}
 }
