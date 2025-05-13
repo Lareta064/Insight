@@ -11,8 +11,7 @@ $primary: #F5802A;
 @import "sections/_header";
 @import "sections/_hero-main";
 @import "sections/_hero-inner";
-@import "sections/_business-support-hero";
-@import "sections/_advantage";
+
 
 @import "sections/_partners";
 @import "sections/_our-service";
@@ -23,6 +22,14 @@ $primary: #F5802A;
 @import "sections/_sertificates.scss";
 @import "sections/_contact-form.scss";
 @import "sections/_footer.scss";
+
+@import "sections/_business-support-hero";
+@import "sections/_advantage";
+
+@import "sections/_registr-account-hero";
+// @import "sections/_registr-account-aboutus";
+// @import "sections/_registr-account-advantage";
+
 
 @import "sections/_cookie.scss";
 

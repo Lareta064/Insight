@@ -2,3 +2,12 @@
   content: "\2022"; /* или "." */
 }
 .breadcrumb-item.active{color: #F04020;}
+.breadcrumb-list .breadcrumb {
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  &::-webkit-scrollbar{display: none;}
+  .breadcrumb-item{ flex-shrink: 0;}
+  
+}

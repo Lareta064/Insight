@@ -1,0 +1,25 @@
+.registr-account-hero.hero{
+
+	
+   .hero-img-group:after{display: none;}
+	@media (min-width: 768px) {
+		.hero-content{
+			max-width: remy(700);
+			width:50%;
+		}
+		.hero-img-group{
+			right: remy(-50);
+			transform: translate(100%, -50%);
+		}
+	}
+		
+	
+	@media (min-width: 1200px) {
+		.hero-content{width: 55%;}
+		.hero-img-group{
+			right: remy(-50);
+			transform: translate(100%, -50%);
+			max-height: remy(664);
+		}
+	}
+}
