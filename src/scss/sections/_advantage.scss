@@ -15,6 +15,7 @@
 		  font-size: 3rem;
 		}
 	}
+	&__icon{margin-bottom: remy(30);}
 	.txt-16{
 		color: #616161;
 		margin-bottom: 0;
@@ -27,6 +28,13 @@
 		@media (min-width: 1200px) {
 		  font-size: 1rem;
 		}
+	}
+	.txt-24{
+		font-family: var(--second-family);
+		font-size: remy(24);
+		line-height: 117%;
+		color: #333;
+		margin-bottom: 0;
 	}
 	@media (min-width: 768px) {
 	padding: remy(20) remy(10);

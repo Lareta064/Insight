@@ -1,0 +1,43 @@
+.accordion .card{
+	 margin-bottom: remy(16);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.4);
+	border: 1px solid #dee2e6;
+	border-radius: 6px;
+}
+
+.accordion .card-header{
+	text-align: left;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 120%;
+	color: #333;
+	min-height:remy(58);
+	border: 0;
+	padding: remy(1) remy(30);
+    background: transparent;
+}
+.accordion .card-body{
+	background: transparent; 
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: remy(20);
+	line-height: 190%;
+	color: #333;
+	padding: remy(10) remy(30) remy(50);
+	h2, h3 {
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: remy(20);
+		line-height: 190%;
+		margin: 0;
+		margin-top: remy(20);
+	}
+	p{margin: 0;}
+	ul{
+		list-style-type: disc;
+		margin-bottom:remy(20);
+		margin-left: 1em;
+	}
+}

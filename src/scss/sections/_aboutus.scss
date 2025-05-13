@@ -2,53 +2,28 @@
 	background-color: rgba(255,255,255, .4);
 	padding:  remy(18) remy(16);
 	border: 2px solid #dee5eb;
-	
+	padding-right: remy(12);
 	width: 100%;
 	max-width: remy(324);
 	// min-width: remy(324);
 	flex-shrink: 0;
 	.fw-600{
-		
+		font-size: remy(20);
 		font-weight: 600;
 		line-height: 120%;
 		color: #333;
 		font-family: var(--third-family);
 	}
 	&:last-child{margin-right: remy(8);}
-	&__icon{
-		width: remy(40);
-		height: remy(40);
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		margin-bottom: remy(24);
-		margin-left: remy(16);
-		
-		&:after{
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);z-index: 1;
-			content:'';
-			width: 100%;
-			height: 100%;
-			border-radius: 50%;background: #f5802a;filter: blur(9px);
-		}
-		svg{fill: rgb(255, 255, 325); position: relative;
-		z-index: 2;}
-		@media (min-width: 1200px) {
-			width: remy(50);
-		    height: remy(50);
-			margin-bottom: remy(32);
-		}
-	}
+	
 	.h-28 {margin-bottom: remy(20);}
 	
 	@media (min-width: 1200px) {
 		max-width: remy(428);
-		
+		padding-right: remy(12);
 		 flex: 1 1 0;
-		padding: remy(28) remy(24);
+		padding: remy(24);
+		
 		// grid-column: span 4;
 		&:last-child{margin-right: 0;}
 	}
@@ -60,5 +35,32 @@
 		grid-template-columns: repeat(12, 1fr);
 		
 		column-gap:remy(16);
+	}
+}
+.benefit-card__icon, .advantage-card__icon{
+	width: remy(40);
+	height: remy(40);
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-bottom: remy(24);
+	margin-left: remy(16);
+	
+	&:after{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);z-index: 1;
+		content:'';
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;background: #f5802a;filter: blur(9px);
+	}
+	svg{fill: rgb(255, 255, 325); position: relative;
+	z-index: 2;}
+	@media (min-width: 1200px) {
+		width: remy(50);
+		height: remy(50);
+		margin-bottom: remy(32);
 	}
 }

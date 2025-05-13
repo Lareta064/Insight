@@ -115,4 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
         dropDownList.classList.remove('drop__list--visible');
       }
     });
+
+   
   });

@@ -15,7 +15,12 @@
 		
 	
 	@media (min-width: 1200px) {
+		.width-limit{max-width:remy(475);}
 		.hero-content{width: 55%;}
+		.hero-text{
+			margin-bottom: remy(42);
+			p+p{margin-top: remy(42);}
+		}
 		.hero-img-group{
 			right: remy(-50);
 			transform: translate(100%, -50%);
