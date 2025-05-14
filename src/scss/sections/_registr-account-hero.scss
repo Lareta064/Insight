@@ -1,7 +1,4 @@
 .registr-account-hero.hero{
-
-	
-   .hero-img-group:after{display: none;}
 	@media (min-width: 768px) {
 		.hero-content{
 			max-width: remy(700);
@@ -28,3 +25,4 @@
 		}
 	}
 }
+.hero-img-group.hero-img--noafter:after{display: none;}
