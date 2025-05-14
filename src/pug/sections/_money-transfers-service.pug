@@ -1,0 +1,28 @@
+//OUR SERVICE
+section.our-service
+	.container
+		.section-header-group.mb-5
+			.round-title.border.border-primary Услуги
+			.h-40 Мы предлагаем следующие услуги по сопровождению финансовых переводов денежных средств как из России за рубеж, так и международных:
+		
+		//ACCORDION
+		.accordion.service-accordion#accordionService
+			.card
+				button.card-header#headingOne(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne') Для корпоративных клиентов
+							
+				#collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordionService')
+					.card-body
+						ul
+							li Консультирование по операциям с иностранными лицами, способам отправки и получения денег (банковские переводы, переводы в цифровой валюте (USDT))
+
+							li Услуги по сопровождению международных сделок (в том числе сделок, одной из сторон которых является компания, зарегистрированная в Российской Федерации), включая структурирование сделки; аудит сделки; помощь в осуществлении денежных переводов и банковское сопровождение (взаимодействие с банковскими организациями, подготовка счетов, мониторинг операций)
+						
+						
+			.card
+				button.card-header#headingTwo(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo') Для физических лиц
+							
+				#collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionService')
+					.card-body
+						li Консультирование по вопросам осуществления денежных переводов с резидентов Российской Федерации на карты физических и юридических лиц - резидентов других стран, а также содействие в осуществлении таких переводов
+
+						li Консультирование по вопросам перевода денежных средств в цифровых валютах (USDT) от физических лиц - резидентов Российской Федерации пользователям из других стран
