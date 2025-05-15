@@ -3,10 +3,14 @@
 		position: relative;
 		inset:0;
 		display: flex;
-		column-gap:remy(24);
+		column-gap:remy(6);
 		backdrop-filter: blur(5px);
 		background: var(--in-sight-ae-white-400);
 		border-radius: remy(12);
+		@media (min-width: 768px) {
+			column-gap:remy(24);
+		
+		}
 		
 	}
 	.benefit-chips-group{
@@ -65,7 +69,8 @@
 	}
 	@media (min-width: 1200px) {
 		.hero-content .hero-text{font-size: 1rem;}
-		.hero-img-group{transform: translate(144%, -50%);}
+		.hero-img-group{transform: translate(125%, -50%);}
 		.hero-img-group .hero-img{ max-height: remy(531);}
 	}
+	@media (min-width: 1440px) {.hero-img-group{transform: translate(144%, -50%);}}
 }

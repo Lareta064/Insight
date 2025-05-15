@@ -15,4 +15,44 @@
 	}
 	.hero-text{margin-bottom: remy(25);}
 	.btn-wrapper{margin-bottom: 32px;}
+	
+}
+.inner-hero.money-transfers-hero{
+	.benefit-chips-group{
+		position: absolute;
+		bottom:0;
+		transform: translate(44%, -30%);
+		.benefit-chips.benefit-chips--plus{
+				position: relative;
+				transform: translateX(25%);
+			}
+		&>*{
+			padding: remy(6) remy(8);
+			max-width: unset;
+			width: fit-content;
+			border:0;
+			@media (min-width: 768px) {
+			padding: remy(6) remy(8);
+			}
+		}
+		@media (min-width: 1200px) {
+			transform: translate(25%, 7%);
+			
+		}
+		
+	}
+	// .benefit-chips.benefit-chips--more{
+	// 	position: absolute;
+	// 	left: 10%;
+	// 	top:50%;
+	// 	bottom: unset;
+	// 	transform: translateY(-50%);
+	// }
+	// .benefit-chips.benefit-chips--plus{
+	// 	position: absolute;
+	// 	left: 50%;
+	// 	bottom:40%;
+	// 	top: unset;
+	// 	transform: translateY(-50%);
+	// }
 }
