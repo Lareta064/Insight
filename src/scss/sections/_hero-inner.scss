@@ -54,6 +54,7 @@
 		.hero-text{font-size: remy(14);}
 		
 	}
+	.hero-text .txt-20{color: #333;}
 	.hero-img-group{margin-top: remy(30);}
 	@media (min-width: 768px) {
 		.hero-img-group{
@@ -69,6 +70,7 @@
 	}
 	@media (min-width: 1200px) {
 		.hero-content .hero-text{font-size: 1rem;}
+
 		.hero-img-group{transform: translate(125%, -50%);}
 		.hero-img-group .hero-img{ max-height: remy(531);}
 	}

@@ -1,0 +1,22 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	include ../sections/_header
+	
+	main.main-column.d-flex.flex-column
+		include ../sections/_buhgaltery-services-hero
+		include ../sections/_buhgaltery-services-aboutus
+		include ../sections/_task-slider
+		
+		include ../sections/_advantage
+		include ../sections/_business-support-process.pug
+		include ../sections/_service-price.pug
+		include ../sections/_form-accent
+		include ../sections/_business-support-faq.pug
+		include ../sections/_work-stages
+		include ../sections/_contacts-form
+	
+	include ../sections/_footer
+block variables
+	-var title = "Бухгалтерские услуги";

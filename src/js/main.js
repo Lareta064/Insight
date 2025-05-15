@@ -115,6 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
         dropDownList.classList.remove('drop__list--visible');
       }
     });
-
+  
+    let solveSlider = new Swiper('.we-solve-swiper', {
+      slidesPerView:3,
+    })
    
   });
