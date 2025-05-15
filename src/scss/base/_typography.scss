@@ -194,7 +194,9 @@
 	color: white;
   }
   .section-header-group{
+	margin-bottom: remy(30);
 	.h-40{line-height: 122%;}
+	
   }
   .round-marker-ol{
 	padding: 0;
@@ -204,11 +206,18 @@
 	li {
 		display: flex;
 		align-items: center;
-		font-size: remy(20);
-		line-height: 1.2;
+		
+		line-height: 137%;
+		 font-size: remy(16);
 		position: relative;
 		padding-left: remy(46);
-		padding-block: remy(16)
+		padding-block: remy(8);
+
+		@media (min-width: 768px) {
+		  font-size: remy(20);
+		  line-height: 1.2;
+		  padding-block: remy(16);
+		}
 	}
 	li +li{margin-top: 1rem;}
 	li:before {
