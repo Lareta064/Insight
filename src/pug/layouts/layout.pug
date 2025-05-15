@@ -18,7 +18,9 @@ html(lang="ru")
 
 		//========= custom styles ========
 		link(rel="stylesheet"  href="./fonts/fonts.css")
-		
+		//==========AOS========
+		link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+		//==========main.css========
 		link(rel="stylesheet"  href="./css/main.css")
 		title !{title}
 		
@@ -31,4 +33,13 @@ html(lang="ru")
 		script(src="./libs/swiper/swiper.js")
 		//BOOTSTRAP
 		script(src="./libs/bootstrap/bootstrap.min.js")
+		//=======AOS ====
+		script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+		script.
+			AOS.init({
+				once: true,
+				duration:700,
+				offset: 300,
+			});
+		
 		script(src="./js/main.js")
