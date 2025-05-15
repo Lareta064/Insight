@@ -196,3 +196,41 @@
   .section-header-group{
 	.h-40{line-height: 122%;}
   }
+  .round-marker-ol{
+	padding: 0;
+	list-style-type: none; 
+	counter-reset: num;
+	
+	li {
+		display: flex;
+		align-items: center;
+		font-size: remy(20);
+		line-height: 1.2;
+		position: relative;
+		padding-left: remy(46);
+		padding-block: remy(16)
+	}
+	li +li{margin-top: 1rem;}
+	li:before {
+		content: counter(num); 
+		counter-increment: num;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		font-family: var(--second-family);
+		font-weight: 700;
+		color: #fff;
+		width: 2rem;
+		height: 2rem;
+		background: var(--primary);
+		border-color: var(--primary);
+		text-align: center;
+		border-radius: 50%;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		
+	}
+  }
