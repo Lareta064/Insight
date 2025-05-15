@@ -1,7 +1,14 @@
 .services-price__content{
 	display: flex;
-	column-gap: remy(16);
+	flex-direction: column;
+	row-gap:remy(24) ;
+	@media (min-width: 992px) {
+		flex-direction: row;column-gap: remy(16);
+		flex-wrap:wrap;
+		justify-content: center;
 
+	}
+	@media (min-width: 1200px) {flex-wrap:nowrap;}
 }
 .serv-price-card{
 	border-radius: remy(24);
@@ -13,10 +20,13 @@
 	.serv-price__title{
 		font-family: var(--second-family);
 		font-weight: 700;
-		font-size: 28px;
+		font-size: remy(21);
 		line-height: 120%;
 		color: #333;
 		margin-bottom: remy(10);
+		@media (min-width: 768px) {
+			font-size: remy(28);
+		}
 	}
 	ul{
 		list-style-type: none; padding:0; margin:0;
@@ -40,25 +50,30 @@
 		column-gap: remy(16);
 	}
 	.serv-price__box{
-		flex:1; padding-left: remy(14);
-
+		flex:1; 
+		@media (min-width: 1280px) {padding-left: remy(14);}
 		
 	}
 	.serv-price__box +.serv-price__box{
-		padding-left: remy(28);
+		padding-left: remy(14);
 		border-left: 1px solid var(--orange);
+		@media (min-width: 1280px) {padding-left: remy(28);}
 	}
 	.serv-price__val, .text-right{
 		display: block;
 		font-family: var(--font-family);
-		font-size: 16px;
+		font-size: remy(12);
 		line-height: 120%;
 		text-align: right;
 		color: #333;
 		white-space: nowrap;
 		strong{
 			font-family: var(--second-family);
-			font-size: remy(20);
+			font-size: remy(16);
+		}
+		@media (min-width: 768px) {
+			font-size: 1rem;
+			strong{font-size: remy(20);}
 		}
 	}
 
