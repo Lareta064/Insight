@@ -3,15 +3,19 @@
 		max-height: remy(664);
 		
 		@media (min-width: 1200px) {
-			aspect-ratio: 784/664;
-			.hero-img{max-height: remy(664);}
+			aspect-ratio: 784/644;
+			.hero-img{max-height: remy(644);}
+			
 			
 		}
 	}
 	@media (min-width: 992px) {
 		.hero-text, .hero-text .txt-20{
 			margin-bottom: remy(42);
-			
+		}
+		.hero-text{
+			padding-right: remy(80);
+			.width-limit{max-width: 530px}
 		}
 	}
 }

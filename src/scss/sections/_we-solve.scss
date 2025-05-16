@@ -12,35 +12,56 @@
 		
 		font-weight: 700;
 		line-height: 150%;
-		
 		margin-bottom: remy(10);
 	}
 	&__title{
 		
 		font-weight: 700;
-		font-size: 2rem;
+		font-size: remy(24);
 		line-height: 120%;
 		color: #333;
+		margin-bottom: remy(10);
+		@media (min-width: 1200px) {
+		   font-size: 2rem;
+		   margin-bottom: 1rem;
+		}
 	}
 	&__txt{
 		font-family: var(--font-family);
 		font-weight: 400;
 		font-size: remy(14);
-		line-height: 150%;
+		line-height: 129%;
+		@media (min-width: 1200px) {
+		   line-height: 150%;
+		}
 
 	}
 	ul{
-
+		padding-left: remy(20);
+		li+li{margin-top: 10px;}
+		@media (min-width: 1200px) {
+		   padding-left: remy(24);
+		}
+	}
+}
+.we-solve .section-header-group{
+	@media (min-width: 768px) {
+	margin-bottom: remy(40);
 	}
 }
 .swiper-navigation{
 	justify-content: center;
 	column-gap:remy(12);
+	position: relative;
+	margin-top: remy(30);
 }
 .we-solve-swiper .swiper-wrapper{
 	display: flex;
 	.swiper-slide{
+		
+		@media (min-width: 1200px) {
 		height: unset!important;
 		display: flex;
+		}
 	}
 }

@@ -117,12 +117,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     let solveSlider = new Swiper('.we-solve-swiper', {
-      slidesPerView:3,
+      slidesPerView:1,
       autoHeight: true,
       spaceBetween: 12,
+      speed:600,
       navigation: {
         nextEl: ".solve-swiper-button-next",
         prevEl: ".solve-swiper-button-prev",
+      },
+      breakpoints: {
+        
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 12,
+          
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 12,
+          autoHeight: false,
+        },
       },
     })
    

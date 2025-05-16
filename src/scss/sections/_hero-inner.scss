@@ -69,12 +69,12 @@
 		.hero-content{width: 50%;}
 	}
 	@media (min-width: 1200px) {
+		.btn.btn-primary{height:remy(58)}
 		.hero-content .hero-text{font-size: 1rem;}
 
 		.hero-img-group{transform: translate(125%, -50%);}
 		.hero-img-group .hero-img{ max-height: remy(531);}
 	}
 	@media (min-width: 1440px) {.hero-img-group{transform: translate(120%, -50%);}}
-	@media (min-width: 1600px) {.hero-img-group{transform: translate(120%, -50%);}}
-	@media (min-width: 1600px) {.hero-img-group{transform: translate(120%, -50%);}}
+	
 }

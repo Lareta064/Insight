@@ -2,13 +2,17 @@ mixin solve-card(num, title)
 	.solve-card
 		.solve-card__num.d-flex 
 			span !{num}
-			span.d-block.d-xl-none/ 10
+			span.d-block.d-xl-none &nbsp;/ 10
 		.solve-card__title !{title}
 		.solve-card__txt
 			block
 //we solve
 section.we-solve
 	.container
+		.section-header-group
+			.round-title.border.border-primary Задачи
+			.h-40.mb-4 Мы поможем решить вам следующие<br>юридические задачи:
+		
 		.we-solve-swiper.swiper
 			.swiper-wrapper
 				.swiper-slide
