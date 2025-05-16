@@ -1,0 +1,44 @@
+.our-slogan{
+	min-height: remy(374);
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	
+	.slogan-image{
+		position: absolute;
+		
+		transform: translate(16%, -50%);
+		top: 50%;
+		right:0;
+		z-index: 1;
+		width: remy(243);
+		height: remy(280);
+		object-fit: contain;
+		@media (min-width: 768px) {
+			width: remy(415);
+			height: remy(500);
+			
+		    left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.slogan-text{
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: remy(24);
+		line-height: 117%;
+		text-align: center;
+		color: rgba(51, 51, 51, 0.75);
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		@media (min-width: 768px) {
+			font-size: remy(52);
+			line-height: 138%;
+		}
+	}
+	@media (min-width: 768px) {
+		min-height: remy(600);
+	}
+}
