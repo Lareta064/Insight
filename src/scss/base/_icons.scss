@@ -8,3 +8,37 @@
 	background-position: center;
 	background-size: contain;
 }
+.accent-icon{
+	position: relative;
+	width: 2.5rem;
+    height: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	&:after{
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background: #f5802a;
+		-webkit-filter: blur(9px);
+		filter: blur(9px);
+	}
+	i{font-size: remy(16);color: white; position: relative;
+	z-index: 2;}
+	
+	@media (min-width: 768px) {
+		width: 3.125rem;
+    	height: 3.125rem;
+		i{font-size: remy(24);}
+	}
+}

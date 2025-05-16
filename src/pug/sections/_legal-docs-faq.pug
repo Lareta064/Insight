@@ -1,0 +1,43 @@
+//Вопросы / ответы
+section.faq
+	.container
+		.section-header-group.mb-5
+			.round-title.border.border-primary FAQ
+			.h-40 Выберите подходящую форму для вашего бизнеса:
+		.accordion.faq-accordion#accordionFaq
+			.card
+				button.card-header#headingOne(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne') Компания в Свободной Экономической Зоне (Free Zone)
+							
+				#collapseOne.collapse(aria-labelledby='headingOne' data-parent='#accordionFaq')
+					.card-body
+						ul
+							li Большие привилегии для ведения бизнеса на международном рынке
+							li 100% иностранное владение бизнесом
+							li Ставка корпоративного налога 0% при соблюдении определенных условий
+							li Отсутствие таможенных пошлин на импорт и экспорт
+							li Возможность перевода 100% прибыли в другую страну
+
+						
+			.card
+				button.card-header#headingTwo(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo') Локальная компания (Mainland)
+				#collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionFaq')
+					.card-body
+						ul
+							li Работа на внутреннем рынке ОАЭ
+							li Компания может работать и иметь офис в любом месте на территории ОАЭ
+							li Отсутствие ограничений на выбор вида деятельности 
+							li Возможность заключения государственных контрактов
+							li 100% иностранное владение бизнесом (имеются исключения)
+			
+			.card
+				button.card-header#headingTwo(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo') Международная бизнес-компания (Offshore)
+				#collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionFaq')
+					.card-body
+						ul
+							li Отсутствие налогов
+							li 100% иностранное владение бизнесом
+							li Полная конфиденциальность сведений об участниках компании
+							li Ведение коммерческой деятельности только на международном рынке
+							li Возможность владения недвижимостью в ОАЭ 
+
+
