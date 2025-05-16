@@ -81,11 +81,22 @@
 	}
 
 }
-.serv-price-card:nth-child(2){
+.serv-price-card:not(.serv-price-card--slim):nth-child(2){
 	background-repeat: no-repeat;
  	background-size: cover;
 	background-position: right center;
   	background-image: image-set(
     url("../img/serv-price-bg.webp") 1x,
     url("../img/serv-price-bg@2x.webp") 2x);
+}
+.serv-price-card.serv-price-card--slim{
+    flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: remy(24) remy(32);
+	border-radius: 32px;
+    column-gap:remy(12);
+	background: rgba(255, 255, 255, 0.6);
+	.serv-price__body{padding-bottom: 0; flex-grow:1;}
+	.serv-price__footer{padding-top: 0; flex-shrink:1; border-top:0;}
 }

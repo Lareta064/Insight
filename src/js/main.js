@@ -118,6 +118,12 @@ document.addEventListener("DOMContentLoaded", function () {
   
     let solveSlider = new Swiper('.we-solve-swiper', {
       slidesPerView:3,
+      autoHeight: true,
+      spaceBetween: 12,
+      navigation: {
+        nextEl: ".solve-swiper-button-next",
+        prevEl: ".solve-swiper-button-prev",
+      },
     })
    
   });

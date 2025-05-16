@@ -1,0 +1,17 @@
+.hero.jurist-service-hero{
+	.hero-img-group {
+		max-height: remy(664);
+		
+		@media (min-width: 1200px) {
+			aspect-ratio: 784/664;
+			.hero-img{max-height: remy(664);}
+			
+		}
+	}
+	@media (min-width: 992px) {
+		.hero-text, .hero-text .txt-20{
+			margin-bottom: remy(42);
+			
+		}
+	}
+}

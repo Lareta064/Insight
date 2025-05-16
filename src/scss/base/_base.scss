@@ -99,10 +99,16 @@ img {
 	width: 100%;
 	height: 100%;
 }
-.round-img{
+.round-106{
 	border-radius: remy(40);
 	@media(min-width:1440px){
 		border-radius: remy(106);
+	}
+}
+.round-160{
+	border-radius: remy(73);
+	@media(min-width:1440px){
+		border-radius: remy(160);
 	}
 }
 input,

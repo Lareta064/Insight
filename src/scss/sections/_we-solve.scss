@@ -2,8 +2,12 @@
 	font-family: var(--second-family);
 	font-size: remy(16);
 	color: rgba(51, 51, 51, 0.75);
-	padding-left: remy(12);
-	padding-right: remy(12);
+	padding: remy(12) remy(16);
+	border-radius: remy(24);
+	background-color: #fff;
+	@media (min-width: 992px) {
+		background-color: transparent;
+	}
 	&__num{
 		
 		font-weight: 700;
@@ -27,5 +31,16 @@
 	}
 	ul{
 
+	}
+}
+.swiper-navigation{
+	justify-content: center;
+	column-gap:remy(12);
+}
+.we-solve-swiper .swiper-wrapper{
+	display: flex;
+	.swiper-slide{
+		height: unset!important;
+		display: flex;
 	}
 }

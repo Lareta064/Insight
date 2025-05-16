@@ -59,7 +59,7 @@
 	@media (min-width: 768px) {
 		.hero-img-group{
 			right:0;
-			transform: translate(134%, -50%);
+			transform: translate(112%, -50%);
 			margin-top: 0;
 			position: absolute;
 			top: 50%;
@@ -74,5 +74,7 @@
 		.hero-img-group{transform: translate(125%, -50%);}
 		.hero-img-group .hero-img{ max-height: remy(531);}
 	}
-	@media (min-width: 1440px) {.hero-img-group{transform: translate(144%, -50%);}}
+	@media (min-width: 1440px) {.hero-img-group{transform: translate(120%, -50%);}}
+	@media (min-width: 1600px) {.hero-img-group{transform: translate(120%, -50%);}}
+	@media (min-width: 1600px) {.hero-img-group{transform: translate(120%, -50%);}}
 }
