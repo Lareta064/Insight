@@ -26,7 +26,7 @@
 		font-size: remy(21);
 		line-height: 120%;
 		color: #333;
-		margin-bottom: remy(10);
+		&+*{margin-top: remy(10);}
 		@media (min-width: 768px) {
 			font-size: remy(28);
 		}
@@ -44,23 +44,31 @@
 	&>*{width: 100%;}
 	.serv-price__body{
 		flex-grow: 1;
+		padding-bottom: remy(16);
+		@media (min-width: 768px) {
 		padding-bottom: remy(48);
+		}
 	}
 	.serv-price__footer{
 		flex-shrink: 0;
 		padding-top: remy(16);
 		border-top: 1px solid rgba(51, 51, 51, .25);
+		column-gap: remy(38);
+		@media (min-width: 768px) {
 		column-gap: remy(16);
+		}
 	}
 	.serv-price__box{
-		flex:1; 
+		flex:1;
+		padding-top: 2px;
 		@media (min-width: 1280px) {padding-left: remy(14);}
 		
 	}
 	.serv-price__box +.serv-price__box{
 		padding-left: remy(14);
+		padding-right: 16px;
 		border-left: 1px solid var(--orange);
-		@media (min-width: 1280px) {padding-left: remy(28);}
+		@media (min-width: 1280px) {padding-left: remy(28);padding-right: 0;}
 	}
 	.serv-price__val, .text-right{
 		display: block;
@@ -79,6 +87,7 @@
 			strong{font-size: remy(20);}
 		}
 	}
+	.text-right{color: #747985;}
 
 }
 .serv-price-card:not(.serv-price-card--slim):nth-child(2){
@@ -90,13 +99,31 @@
     url("../img/serv-price-bg@2x.webp") 2x);
 }
 .serv-price-card.serv-price-card--slim{
-    flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding: remy(24) remy(32);
-	border-radius: 32px;
-    column-gap:remy(12);
-	background: rgba(255, 255, 255, 0.6);
-	.serv-price__body{padding-bottom: 0; flex-grow:1;}
-	.serv-price__footer{padding-top: 0; flex-shrink:1; border-top:0;}
+	.serv-price__title{font-size: 1rem;}
+	@media (min-width: 768px) {
+	
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: remy(24) remy(32);
+		border-radius: 32px;
+		column-gap:remy(12);
+		background: rgba(255, 255, 255, 0.6);
+		.serv-price__body{padding-bottom: 0; flex-grow:1;}
+		.serv-price__footer{padding-top: 0; flex-shrink:5; border-top:0;}
+		.serv-price__title{font-size:remy(20);}
+		.serv-price__box{
+			width: remy(156); 
+			height: remy(41);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		
+		}
+	}
+}
+.services-price-wrapper >*+*{
+	margin-top: remy(16);
+	@media (min-width: 768px) {margin-top: 1.5rem;}
+
 }

@@ -1,0 +1,87 @@
+.package-card{
+	border-radius: 1.5rem;
+	padding: 1rem 1.5rem;
+	padding-bottom: 2rem;
+	width: remy(324);
+	
+	flex-shrink:0;
+	color: #333;
+	font-family: var(--font-family);
+	background: #fff;
+	&__title{
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: remy(28);
+		line-height: 120%;
+		position: relative;
+		padding-bottom: remy(16);
+		&:after{
+			width: 20px;
+			height: 21px;
+			content:'';
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 10.2852C20 4.76236 15.5228 0.285156 10 0.285156C4.47715 0.285156 0 4.76236 0 10.2852C0 15.808 4.47715 20.2852 10 20.2852C15.5228 20.2852 20 15.808 20 10.2852ZM4.29298 8.99232L9.293 13.9923C9.6835 14.3828 10.3167 14.3828 10.7072 13.9923L15.7072 8.99232C16.0977 8.6018 16.0977 7.9686 15.7072 7.5781C15.3167 7.1876 14.6835 7.1876 14.293 7.5781L10.0001 11.871L5.7072 7.5781C5.31667 7.1876 4.68351 7.1876 4.29298 7.5781C3.90246 7.9686 3.90246 8.6018 4.29298 8.99232Z' fill='%23D5D9E2' /%3e%3c/svg%3e");
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 2;
+			pointer-events: none;
+		}
+		@media (min-width: 1024px) {
+			padding-bottom: 0;
+			&:after{display: none;}
+		}
+	}
+	.txt-16{line-height: 150%;}
+	&__body{
+		&>*+*{margin-top: remy(16);}
+		@media (max-width: 1023.99px) {
+			&>*+*{margin-top: remy(24);}
+			.package-card__txt{display: none;}
+		}
+	}	
+	&__body.active{
+		@media (max-width: 1023.99px) {
+		   .package-card__txt{display: block;}
+		}
+	}	
+
+	&__footer{
+		padding-top: 1rem;
+		border-top: 1px solid rgba(51, 51, 51, .25);
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		color: #333;
+	}
+	@media (min-width: 992px) {
+	 max-width: remy(350);
+	 width: 100%;
+	 flex-shrink: 1;
+	}
+}
+.packages-cards{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	column-gap:1.5rem;
+	@media (max-width: 1199px) {
+		width: calc(50% + 50vw);
+		overflow-x: auto;
+		scrollbar-width: none;
+		column-gap:1rem;
+		justify-content: flex-start;
+		&::-webkit-scrollbar{display: none;}
+		&>*:last-child{margin-right: 16px;}
+	}
+}
+.service-packages{
+	overflow: hidden;
+	
+	.section-header-group{
+		@media (min-width: 992px) {
+		  margin-bottom: remy(56);
+		  .width-limit{width: min(900px, 80%); margin-top: remy(32);}
+		}
+	}
+}

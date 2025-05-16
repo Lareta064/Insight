@@ -138,6 +138,15 @@ document.addEventListener("DOMContentLoaded", function () {
           autoHeight: false,
         },
       },
-    })
+    });
+
+    const packageCardBody = document.querySelectorAll('.package-card__body');
+    if(packageCardBody.length>0){
+      packageCardBody.forEach((el)=>{
+        el.addEventListener('click', ()=>{
+          el.classList.toggle('active');
+        });
+      });
+    }
    
   });
