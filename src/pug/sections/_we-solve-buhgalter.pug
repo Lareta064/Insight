@@ -1,8 +1,6 @@
 mixin solve-card(num, title)
 	.solve-card
-		.solve-card__num.d-flex 
-			span !{num}
-			span.d-block.d-xl-none/ 10
+		.solve-card__num !{num}
 		.solve-card__title !{title}
 		.solve-card__txt
 			block
@@ -51,6 +49,7 @@ section.we-solve
 					+solve-card('10', 'Регистрация/снятие с учета акциза')
 						p Мы уверены в качестве наших услуг, наши клиенты доверяют нам самые важные финансовые вопросы.
 							
+			.solve-swiper-pagination
 			.swiper-navigation.d-flex
 				button.solve-swiper-button-prev.swiper-button-prev
 				button.solve-swiper-button-next.swiper-button-next

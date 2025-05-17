@@ -1,8 +1,7 @@
 mixin solve-card(num, title)
 	.solve-card
-		.solve-card__num.d-flex 
-			span !{num}
-			span.d-block.d-xl-none &nbsp;/ 10
+		.solve-card__num !{num}
+			
 		.solve-card__title !{title}
 		.solve-card__txt
 			block
@@ -32,7 +31,7 @@ section.we-solve
 					+solve-card('05', 'Постоянная<br>поддержка')
 						p И рекомендации по подготовке к экзамену и деятельности в сфере Real Estate.
 				
-				
+			.solve-swiper-pagination
 			.swiper-navigation.d-flex
 				button.solve-swiper-button-prev.swiper-button-prev
 				button.solve-swiper-button-next.swiper-button-next

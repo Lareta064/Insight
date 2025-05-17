@@ -125,6 +125,10 @@ document.addEventListener("DOMContentLoaded", function () {
         nextEl: ".solve-swiper-button-next",
         prevEl: ".solve-swiper-button-prev",
       },
+      pagination: {
+        el: ".solve-swiper-pagination",
+        type: "fraction",
+      },
       breakpoints: {
         
         768: {

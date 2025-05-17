@@ -3,16 +3,24 @@
 	font-size: remy(16);
 	color: rgba(51, 51, 51, 0.75);
 	padding: remy(12) remy(16);
+	padding-top: remy(56);
 	border-radius: remy(24);
 	background-color: #fff;
+	@media (min-width: 768px) {
+		
+		padding-top: remy(12);
+	}
 	@media (min-width: 992px) {
 		background-color: transparent;
 	}
 	&__num{
-		
 		font-weight: 700;
 		line-height: 150%;
 		margin-bottom: remy(10);
+		display: none;
+		@media (min-width: 768px) {
+		display: block;
+		}
 	}
 	&__title{
 		
@@ -63,5 +71,19 @@
 		height: unset!important;
 		display: flex;
 		}
+	}
+}
+.solve-swiper-pagination{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 5;
+	font-family: var(--second-family);
+	font-size: remy(16);
+	color: rgba(51, 51, 51, 0.75);
+	font-weight: 700;
+	line-height: 150%;
+	@media (min-width: 768px) {
+		display: none!important;
 	}
 }
