@@ -59,10 +59,11 @@
 	@media (min-width: 768px) {
 		.hero-img-group{
 			right:0;
-			transform: translate(112%, -50%);
+			transform: translateX(112%);
 			margin-top: 0;
 			position: absolute;
-			top: 50%;
+			top: 0;
+			bottom:0;
 			&:after{width: 80%;}
 			.hero-img{height: 100%; min-height: remy(430);}
 		}
@@ -72,9 +73,9 @@
 		.btn.btn-primary{height:remy(58)}
 		.hero-content .hero-text{font-size: 1rem;}
 
-		.hero-img-group{transform: translate(125%, -50%);}
-		.hero-img-group .hero-img{ max-height: remy(531);}
+		.hero-img-group{transform: translateX(125%);}
+		// .hero-img-group .hero-img{ max-height: remy(531);}
 	}
-	@media (min-width: 1440px) {.hero-img-group{transform: translate(120%, -50%);}}
+	@media (min-width: 1440px) {.hero-img-group{transform: translateX(120%);}}
 	
 }
