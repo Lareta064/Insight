@@ -57,11 +57,13 @@
 		height: 100%;
 		border-radius: 50%;background: #f5802a;filter: blur(9px);
 	}
-	svg{fill: rgb(255, 255, 325); position: relative;
-	z-index: 2;}
+	
+	i,svg{fill: rgb(255, 255, 325); position: relative;
+	z-index: 2; color: white; font-size: remy(18);}
 	@media (min-width: 1200px) {
 		width: remy(50);
 		height: remy(50);
 		margin-bottom: remy(32);
+		i{ font-size: remy(24);}
 	}
 }

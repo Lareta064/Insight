@@ -18,7 +18,7 @@
 		&>*{
 			transform: unset;
 			max-width: unset;
-			border: 1px solid var(--color-azure-90);
+			
 			width: 100%;
 			max-width: remy(358);
 			padding: remy(17) remy(25);
@@ -33,7 +33,6 @@
 			left: 0;
 			top: 50%;
 			transform: translate(-25%, -52%);
-			
 		}
 		@media (min-width: 1200px) {
 			position: absolute;
@@ -44,6 +43,7 @@
 		}
 	}
 }
+.business-support-hero .benefit-chips-group >*{border: 1px solid var(--color-azure-90);}
 .hero.inner-hero{
 	.breadcrumb-list{margin-bottom: remy(30);}
 	.hero-content{

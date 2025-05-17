@@ -190,6 +190,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: remy(18);
+	line-height: 1;
+	
+	i{
+		vertical-align: middle;line-height: 1;
+	}
   }
   .social-item:hover{
 	color: white;
