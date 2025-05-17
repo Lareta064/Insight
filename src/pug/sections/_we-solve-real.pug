@@ -1,0 +1,38 @@
+mixin solve-card(num, title)
+	.solve-card
+		.solve-card__num.d-flex 
+			span !{num}
+			span.d-block.d-xl-none &nbsp;/ 10
+		.solve-card__title !{title}
+		.solve-card__txt
+			block
+//we solve
+section.we-solve
+	.container
+		.section-header-group
+			.round-title.border.border-primary REPA
+			.h-40.mb-4 Мы предоставляем следующие услуги по получению сертификата REPA:.
+		
+		.we-solve-swiper.swiper
+			.swiper-wrapper
+				.swiper-slide
+					+solve-card('01', 'Комплексная подготовка к экзаменам')
+						p Включает в себя индивидуальные курсы подготовки к экзаменам, которые охватывают все необходимые темы, включая законы и правила ОАЭ, стандарты этики риелторов и многое другое.
+				.swiper-slide
+					+solve-card('02', 'Пробные экзамены и практические занятия')
+						p Проводимые с целью знакомства со структурой экзамена, методами управления временем и стилем вопросов.
+				.swiper-slide
+					+solve-card('03', 'Юридический аудит')
+						p Включающие обширные учебные материалы: учебники, справочники и онлайн-ресурсы для будущих риэлторов
+				
+				.swiper-slide
+					+solve-card('04', 'Индивидуальные консультации')
+						p По подготовке к экзаменам, чтобы удовлетворить  ваши потребности, определить области, в которых необходимо совершенствоваться  и предложить ценные советы и рекомендации для успешной сдачи экзамена.
+				.swiper-slide
+					+solve-card('05', 'Постоянная<br>поддержка')
+						p И рекомендации по подготовке к экзамену и деятельности в сфере Real Estate.
+				
+				
+			.swiper-navigation.d-flex
+				button.solve-swiper-button-prev.swiper-button-prev
+				button.solve-swiper-button-next.swiper-button-next

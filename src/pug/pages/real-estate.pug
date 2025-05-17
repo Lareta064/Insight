@@ -1,0 +1,18 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	include ../sections/_header
+	main.main-column.d-flex.flex-column
+		include ../sections/_real-hero
+		//- include ../sections/_real-aboutus
+		include ../sections/_we-solve-real
+		include ../sections/_form-accent
+		include ../sections/_legal-docs-process
+		include ../sections/_legal-docs-faq
+		
+		include ../sections/_contacts-form-woomen
+	include ../sections/_footer
+
+block variables
+	-var title = "Легализация документов";
