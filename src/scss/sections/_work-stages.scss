@@ -147,21 +147,29 @@
 .work-stages{
 	@media (max-width: 767.99px) {
 		.work-stages-img{
-			width: remy(117);
+			
+			img{height: 100%;}
 		}
+		
+		&.work-stages-five-item .work-stages-img{
+			aspect-ratio: 145/980;
+		}
+		
 		.work-stage-item{left:remy(-52);}
 		.work-stage-item:nth-child(odd){
 			left: remy(22);
 		}
 		.work-stage-item:nth-child(5){
-		   margin-top:(-45);
+		   margin-top:remy(-45);
+		   left:remy(-40);
+		   padding-top:remy(20);
 		}
 		&.work-stages-four-item .work-stage-item{
 			width: 244px;
 			&:nth-child(odd){left: remy(100);}
-			&:nth-child(2){left: remy(-4);}
+			&:nth-child(2){left: -1.25rem;}
 			&:nth-child(3){left: remy(90);}
-			&:nth-child(4){left: remy(4);}
+			&:nth-child(4){left: 6.25rem; top:1rem;}
 		}
 	}
 }
