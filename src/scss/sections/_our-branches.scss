@@ -1,0 +1,55 @@
+.branche-card{
+	border-radius: remy(20);
+	padding: remy(20);
+	
+	height: remy(184);
+	&__title{
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: remy(20);
+		line-height: 120%;
+		color: #fff;
+		margin-bottom: remy(24);
+		p{margin-bottom: 0;}
+		&>*+*{margin-top: 10px;}
+	}
+	
+	@media (min-width: 768px) {
+		border-radius: remy(40);
+		padding: remy(48);
+		flex:1;
+		height: remy(245);
+		&__title{
+			font-family: var(--second-family);
+			font-weight: 700;
+			font-size: remy(28);
+			line-height: 120%;
+			color: #fff;
+			&>*+*{margin-top: 15px;}
+		}
+	}
+}
+.branche-card{
+	background-image: url('../img/branch1.webp');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+}
+.branche-card.branche-card--msk{
+	background-image: url('../img/branch2.webp');
+}
+  @media (min-resolution: 2dppx) {
+    .branche-card {  background-image: url('../img/branch1@2x.webp');}
+    
+	.branche-card.branche-card--msk{ background-image: url('../img/branch2@2x.webp');}
+  }
+
+.branches-wrapper{
+	display: flex;
+	flex-direction: column;
+	column-gap: remy(20);
+	row-gap: remy(20);
+	@media (min-width: 768px) {
+	   flex-direction: row;
+	}
+}

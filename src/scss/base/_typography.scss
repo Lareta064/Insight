@@ -113,6 +113,19 @@
 .section-preview-text{
 	p:last-child{margin-bottom: 0;}
 }
+.text-link{
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color:#333;
+	transition: .3s; &:hover{opacity: .5;}
+}
+.text-link.text-link--white{
+color: white;
+}
 .mb-40{
 	margin-bottom: remy(20);
 	@media (min-width: 768px) {

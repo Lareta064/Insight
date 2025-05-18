@@ -121,6 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
       autoHeight: true,
       spaceBetween: 12,
       speed:600,
+      autoplay:{
+        delay: 2500,
+      },
       navigation: {
         nextEl: ".solve-swiper-button-next",
         prevEl: ".solve-swiper-button-prev",
@@ -147,6 +150,9 @@ document.addEventListener("DOMContentLoaded", function () {
        slidesPerView: 1,
        spaceBetween:16,
        speed:600,
+       autoplay:{
+        delay: 2500,
+      },
        navigation: {
         nextEl: ".obtaining-swiper-next",
         prevEl: ".obtaining-swiper-prev",

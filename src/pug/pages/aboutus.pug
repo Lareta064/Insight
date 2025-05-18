@@ -63,54 +63,12 @@ block content
 								button.btn.btn-primary(type='button') Оставить заявку
 	//MAIN
 	main.main-column.d-flex.flex-column
-		//HERO
-		section.hero.hero--main
-			.container
-				.row.align-items-center
-					.col-12.col-lg-6.col-xxl-5.hero-content
-						h1.h-48.mb-50  Регистрация<br>компаний в ОАЭ
-						.hero-text.txt-20
-							p Открытие и сопровождение бизнеса в&nbsp;Объединенных Арабских Эмиратах
-							p Бухгалтерское сопровождение фирм, регистрации&nbsp;фрашиз, открытие счетов и виз, оформление и продление лицензий
-						
-						//hero-img
-						.hero-img-group
-							img.hero-img.round-106.object-fit-cover(src='./img/hero.webp', srcset='./img/hero@2x.webp 2x' width='784' height='531'  alt='img')
-							
-							//benefit-label
-							.benefit-chips.d-flex.align-items-center
-								.benefit-chips__img
-									img(src='./img/hero-icon.webp', srcset='./img/hero-icon@2x.webp 2x' width='43' height='53' loading='lazy' alt='img')
-								.benefit-chips__txt
-									.fw-bold Insight в Дубае!
-									p.mb-0 Мы расширяемся, поэтому теперь мы предоставляем бизнес-услуги  в Объединённых Арабских Эмиратах
-							
-							//benefit-label
-							.benefit-chips.d-flex.align-items-center
-								.benefit-chips__img
-									img(src='./img/hero-icon2.webp', srcset='./img/hero-icon2@2x.webp 2x' width='83' height='53' loading='lazy' alt='img')
-								.benefit-chips__txt
-									.fw-bold Insight в Дубае!
-									p.mb-0 Мы расширяемся, поэтому теперь мы предоставляем бизнес-услуги  в Объединённых Арабских Эмиратах
-							
-							//benefit-label
-							.benefit-chips.d-flex.align-items-center
-								.benefit-chips__img +250
-									
-								.benefit-chips__txt
-									.fw-bold Успешных<br>проектов
-									
-						.btn-wrapper.d-flex.lg-d-block
-							button.btn.btn-primary.w-lg-100(type='button') Оставить заявку
-		include ../sections/_partners-short
-		include ../sections/_our-service
-		include ../sections/_partners-large
-		include ../sections/_form-accent
-		include ../sections/_our-benefits
+		include ../sections/_about-page-hero
 		include ../sections/_aboutus
-		include ../sections/_review
-		include ../sections/_sertificates
-		include ../sections/_contacts-form
+		include ../sections/_about-page-benefits
+		include ../sections/_about-page-branch
+		include ../sections/_about-page-cta
+		
 	
 	//FOOTER
 	footer.footer
@@ -165,31 +123,7 @@ block content
 						i.bi.bi-filetype-pdf
 						span Скачать презентацию
 
-	//cookie
-	.cookie-popup
-		.d-flex.flex-column
-			.h-28 Cookie settings
-			
-			p.txt-12.mb-0 We use cookies to provide you with the best possible experience. They also allow us to analyze user behavior in order to constantly improve the website for you.
-			
-			.cookie-popup-buttons.d-flex
-				button.btn.btn-primary Accept All
-				button.btn.btn-light-blue Accept Selection
-				button.btn.btn-grey Accept All
-			
-			.cookie-popup-row.d-flex
-				.d-flex.gap-2.txt-12.cookie-popup-direction
-					span
-					| Necessary
-				.d-flex.gap-2.txt-12.cookie-popup-direction
-					span
-					| Analytics
-				.d-flex.gap-2.txt-12.cookie-popup-direction
-					span
-					| Preferences
-				.d-flex.gap-2.txt-12.cookie-popup-direction
-					span
-					| Marketing
+	
 
 block variables
 	-var title = "INSIGHT";
