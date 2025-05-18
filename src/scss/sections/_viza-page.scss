@@ -1,0 +1,22 @@
+.viza-page-faq .accordion{
+	position: relative;
+	&:after{
+		content:'';
+		position: absolute;
+		top: remy(350);
+		left: 0;
+		transform: translateY(-50%);
+		width: remy(300);
+		aspect-ratio:1;
+		
+		border-radius: 50%;
+		background: linear-gradient(67deg, #f04020 0%, #fab950 100%);
+		filter: blur(150px);
+		display: none;
+		@media (min-width: 1200px) {
+			display: block;
+		}
+	}
+	.card{position: relative;z-index: 2;}
+	
+}

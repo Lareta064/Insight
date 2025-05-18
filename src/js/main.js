@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropDownList = dropDownWrapper.querySelector('.drop__list');
     const dropDownListItems = dropDownList.querySelectorAll('.drop__list-item');
     const dropDownInput = dropDownWrapper.querySelector('.drop__input-hidden');
-    console.log(dropDownListItems);
+  
   
     dropDownBtn.addEventListener('click', function (e) {
       dropDownList.classList.toggle('drop__list--visible');
@@ -140,6 +140,35 @@ document.addEventListener("DOMContentLoaded", function () {
           slidesPerView: 3,
           spaceBetween: 12,
           autoHeight: false,
+        },
+      },
+    });
+    let vizaSwiper = new Swiper('.viza-obtaining-swiper', {
+       slidesPerView: 1,
+       spaceBetween:16,
+       speed:600,
+       navigation: {
+        nextEl: ".obtaining-swiper-next",
+        prevEl: ".obtaining-swiper-prev",
+      },
+       grid:{
+            rows: 2
+        },
+        breakpoints: {
+        
+        768: {
+          slidesPerView: 2,
+           spaceBetween: 16,
+            grid:{
+              rows: 1
+          },
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 16,
+          grid:{
+              rows: 1
+          },
         },
       },
     });

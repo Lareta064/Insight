@@ -55,9 +55,10 @@
 		line-height: 190%;
 		margin: 0;
 		margin-top: remy(20);
+		margin-bottom: remy(20);
 	}
-	p{margin: 0;}
-	ul{
+	// p{margin: 0;}
+	ol, ul{
 		list-style-type: disc;
 		margin-bottom:remy(20);
 		margin-left: 1em;
@@ -66,6 +67,6 @@
 	   font-size: 18px;
        line-height: 122%;
 	  padding: remy(10) remy(24) remy(30);
-	   ul{padding-left: 1em;}
+	   ol,ul{padding-left: 1em;}
 	}
 }
