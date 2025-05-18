@@ -28,6 +28,9 @@
 			text-align: center;
 			color: #333;
 			margin-bottom: 0;
+			@media (min-width: 768px) {
+				font-size: remy(16);
+			}
 			@media (min-width: 1200px) {
 				font-size: remy(20);
 			}
@@ -86,7 +89,28 @@
 	.work-stage-item:nth-child(3){padding-top: 10px;}
 }
 .work-stages-list{
-	min-height: remy(400);
+	height: remy(400);
 	position: relative;
 	z-index: 2;
+}
+.work-stages.business-support-stages{
+	.work-stage-item{position: relative;}
+	
+	.work-stage-item:first-child{
+       top:-20px;
+	}
+	.work-stage-item:nth-child(2){
+       top:-45px;
+	}
+	.work-stage-item:nth-child(3){
+       top:-10px;
+	}
+	.work-stage-item:nth-child(4){
+       top:-65px;
+	   right:-30px;
+	}
+	.work-stage-item:nth-child(5){
+       top:20px;
+	   
+	}
 }
