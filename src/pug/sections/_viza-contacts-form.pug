@@ -1,0 +1,59 @@
+//contacts foem
+section.contacts-feedback
+	.container
+		.contacts-form-wrapper
+			form.contacts-form.d-grid(action="" method="method")
+				.contacts-form__column.d-flex.flex-column
+					.feedback-form__title
+						.h-40 Оставить заявку
+						p.txt-24 Оставьте ваши контакты и наши специалисты свяжутся с вами	
+				
+					.contacts-form__img.d-none.d-xl-block.position-relative
+						img(src='./img/viza-form.webp', srcset='./img/viza-form@2x.webp 2x' width='611' height='583' loading='lazy' alt='img')
+						//benefit-label
+						.benefit-chips.d-flex.align-items-center.position-absolute
+							.benefit-chips__img.text-primary= '<30'
+								
+							.benefit-chips__txt
+								.fw-bold Компаний<br>в сопровождении
+						
+						//benefit-label
+						.benefit-chips.d-flex.align-items-center.position-absolute
+							.benefit-chips__img.text-primary +250
+								
+							.benefit-chips__txt
+								.fw-bold Успешных<br>проектов
+				
+				//FORM INPUTS
+				.contacts-form__body
+					.form-item
+						input(type="text" placeholder="Ваше имя")
+					.form-item
+						input(type="text" placeholder="Ваш телефон")
+					.form-item
+						input(type="text" placeholder="Ваш email")
+					.form-item
+						.form-dropdown.drop
+							button.drop__button(type="button") Услуга которая вам требуется
+						
+							.drop__list
+								ul
+									li.drop__list-item(data-value="Услуга 1") Услуга 1
+									li.drop__list-item(data-value="Услуга 2") Услуга 2
+									li.drop__list-item(data-value="Услуга 3") Услуга 3
+									li.drop__list-item(data-value="Услуга 4") Услуга 4
+									li.drop__list-item(data-value="Услуга 5") Услуга 5
+									li.drop__list-item(data-value="Услуга 6") Услуга 6
+									li.drop__list-item(data-value="Услуга 7") Услуга 7
+								input.drop__input-hidden(type="hidden" value="")
+					
+					
+					.form-agree.form-check.mb-40
+						input.form-check-input#flexCheckDefault2(type='checkbox')
+						label.form-check-label(for='flexCheckDefault2') Я ознакомился и согласен с #[a.fw-bold(href="#" ) условиями обработки персональных данных]
+					
+					.form-item.form-capcha
+						img(src='./img/captcha.webp',  width='302' height='76' loading='lazy' alt='img')
+					
+					.form-btn.d-flex
+						button.btn.btn-primary.w-lg-100(type="submit") Отправить

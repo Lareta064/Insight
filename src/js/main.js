@@ -116,6 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   
+  });
+  document.addEventListener('DOMContentLoaded', function(){
+    
     let solveSlider = new Swiper('.we-solve-swiper', {
       slidesPerView:1,
       autoHeight: true,
@@ -146,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     });
+   
     let vizaSwiper = new Swiper('.viza-obtaining-swiper', {
        slidesPerView: 1,
        spaceBetween:16,
@@ -188,4 +192,39 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
    
-  });
+     //TEAM SLIDER
+
+    let teamSlider;
+    function toggleSlider() {
+        const screenWidth = window.innerWidth;
+    
+        if (screenWidth < 1200) {
+            if (!teamSlider) {
+                
+                teamSlider = new Swiper('.team-wrapper', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16, // Пример настройки отступов между слайдами
+                    grid:{
+                        rows: 2
+                    },
+                    navigation: {
+                      nextEl: ".team-swiper-next",
+                      prevEl: ".team-swiper-prev",
+                    },
+                });
+            }
+        } else {
+            if (teamSlider) {
+                // Уничтожаем слайдер, если экран больше 768px
+                teamSlider.destroy(true, true);
+                teamSlider = null; // Сбрасываем переменную
+            }
+        }
+    }
+    
+    // Вызываем функцию при загрузке страницы
+    toggleSlider();
+    
+    // Добавляем слушатель для события изменения размера экрана
+    window.addEventListener('resize', toggleSlider);
+  })

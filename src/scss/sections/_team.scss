@@ -1,0 +1,121 @@
+.team-cheff{
+	display: block;
+	.round-title{margin-bottom: remy(15);}
+	&__photo{
+		aspect-ratio:358/303;
+		width: remy(358);
+		display: flex;
+		justify-content: flex-end;
+		grid-column: span 5;
+		img{
+			width: remy(266);
+			height: 100%;
+			object-fit:cover;
+			border-radius: remy(56);
+			position: relative;
+			z-index: 2;
+		}
+	}
+	&__text {
+		font-size: 12px;
+       line-height: 167%;
+		line-height: 162%;
+		color: #747985;
+		margin-top: remy(23);
+		grid-column: span 7;
+		.h-52{margin-bottom: remy(10);}
+	}
+	&__rang{
+		font-family: var(--font-family);
+		font-weight: 400;
+		
+		color: #333;
+		margin-bottom: remy(30);
+		font-size: 14px;
+		line-height: 143%;
+	}
+	@media (min-width: 768px) {
+		
+		&__photo{
+			
+			width: remy(350);
+			aspect-ratio: 7/8;
+			display: block;
+			img{width: 100%;}
+		}
+		&__rang{
+			font-size: remy(18);
+		   line-height: 111%;
+		}
+		&__text {
+		   font-size: remy(16);
+		   line-height: 162%;
+		   max-width: remy(592);
+		   margin-top: 0;
+		}
+	}
+    @media (min-width: 992px) {
+		display: grid;
+		grid-template-columns:  repeat(12, 1fr);
+	    column-gap:remy(50);
+	}
+	@media (max-width: 767.99px) {
+		.team-cheff__photo.accent-after:after{
+			display: block;
+			background: linear-gradient(237deg, #f04020 0%, #fab950 100%);
+			top: 0;
+			bottom: 0;
+			transform: translateY(0);
+			filter: blur(30px);
+		}
+	}
+}
+.team-card{
+	column-gap: remy(34);
+	padding-block: remy(20);
+	max-width: remy(409);
+	.round-title{margin-bottom:0;}
+	&__img {
+		flex-shrink: 0;
+		img{
+			border-radius: remy(16);
+			width: remy(120);
+			height: remy(150);
+			object-fit: cover;
+		}
+	}
+	&__text{
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: remy(14);
+		line-height: 143%;
+		color: #333;
+		&>*+*{margin-top: remy(13);
+			p{margin-bottom: 0;}
+		}
+	}
+	&__title{
+		font-family: var(--second-family);
+		font-weight: 700;
+		font-size: remy(24);
+		line-height: 100%;
+		color: #333;
+	}
+}
+.team-wrapper{
+	height: remy(470);
+	.swiper-slide{width: 358px!important;}
+	@media (min-width: 1200px) {
+	height: auto;
+	.swiper-nav{display: none!important;}
+	.swiper-wrapper{
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		row-gap: remy(34);
+		column-gap: remy(46);
+	 }
+	 .swiper-slide{
+		grid-column: span 4;
+	 }
+	}
+}
