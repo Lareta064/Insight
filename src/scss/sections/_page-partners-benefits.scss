@@ -78,3 +78,49 @@
     background-image: url('../img/cta-bg@2x.webp');
   }
 }
+
+
+.large-modal.modal{
+	.modal-content{
+		border-radius: remy(24);
+		@media (min-width: 992px) {
+		 border-radius: remy(106);
+		 padding: remy(28) remy(48) remy(60)
+		}
+	}
+	.modal-header, .modal-content{
+		border: none;
+	}
+	.modal-header{
+		padding-bottom: 24px;
+		padding: remy(24);
+		@media (min-width: 992px) {
+			padding-bottom: remy(40);
+		}
+	}
+	.modal-body{
+		padding-inline: remy(12);
+		padding-top: 0;
+		
+	}
+	.modal-title{
+		font-family: var(--second-family);
+		font-weight: 700;
+		
+		font-size: 24px;
+		line-height: 117%;
+		letter-spacing: -0.02em;
+		color: #333;
+		@media (min-width: 992px) {
+			font-size: 40px;
+			line-height: 100%;
+		}
+	}
+	@media (min-width: 576px) {
+    .modal-dialog {
+		max-width: remy(1320);
+		
+	}
+}
+}
+						
