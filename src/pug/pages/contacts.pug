@@ -1,0 +1,12 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	include ../sections/_header
+	main.main-column.d-flex.flex-column
+		include ../sections/_contacts-page
+		include ../sections/_contacts-form
+	include ../sections/_footer
+
+block variables
+	-var title = "Контакты";

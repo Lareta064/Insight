@@ -7,7 +7,7 @@ section.services-price.our-reward
 		
 		.services-price__content.grid-three-column
 			//single card
-			.serv-price-card(data-aos="fade-left")
+			.serv-price-card
 				.serv-price__body
 					.serv-price__title Регистрация компании
 					
@@ -16,7 +16,7 @@ section.services-price.our-reward
 						span.serv-price__val от #[strong 2,000 AED]
 						
 			//single card
-			.serv-price-card(data-aos="fade-left"  data-aos-delay="150")
+			.serv-price-card
 				.serv-price__body
 					.serv-price__title Получение резидентской визы ОАЭ
 					
@@ -26,7 +26,7 @@ section.services-price.our-reward
 						
 			
 			//single card
-			.serv-price-card(data-aos="fade-left"  data-aos-delay="300")
+			.serv-price-card
 				.serv-price__body
 					.serv-price__title Открытие банковского счета
 					
@@ -35,7 +35,7 @@ section.services-price.our-reward
 						span.serv-price__val от #[strong 1,000 AED]
 					
 			//single card
-			.serv-price-card(data-aos="fade-left"  data-aos-delay="300")
+			.serv-price-card
 				.serv-price__body
 					.serv-price__title Бухгалтерское<br>сопровождение
 					
@@ -44,7 +44,7 @@ section.services-price.our-reward
 						span.serv-price__val  #[strong 100% цены 1-го месяца]
 			
 			//single card
-			.serv-price-card(data-aos="fade-left"  data-aos-delay="300")
+			.serv-price-card
 				.serv-price__body
 					.serv-price__title Консультации по ведению бухгалтерии и налогам
 					
@@ -53,7 +53,7 @@ section.services-price.our-reward
 						span.serv-price__val #[strong 500 AED]
 			
 			//single card
-			.serv-price-card(data-aos="fade-left"  data-aos-delay="300")
+			.serv-price-card
 				.serv-price__body
 					.serv-price__title Легализация документов
 					
@@ -63,4 +63,111 @@ section.services-price.our-reward
 
 
 		.button-center-wrapper.d-flex.mt-5
-			button.btn.btn-primary Подробнее о вознагрождении
+			button.btn.btn-primary(data-bs-toggle="modal" data-bs-target="#priceTable") Подробнее о вознагрождении
+
+		// modal
+		.modal.fade#priceTable
+			.modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+				.modal-content
+					.modal-header
+						.modal-title.fs-5#exampleModalLabel Таблица комиссий
+						button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+					
+					.modal-body
+						.price-table
+							.price-table-header.price-table-row
+								.price-table-cell.cell-name Услуга
+								.price-table-cell.cell-amount Стоимость
+								.price-table-cell.cell-commission Комиссия
+							
+							.price-table-body
+								//single block
+								.price-table-block
+									.price-table-block__title
+										span Регистрация компаний
+									
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Регистрация компании на Mainland
+										.price-table-cell.cell-amount от AED 18,000
+										.price-table-cell.cell-commission AED 2,000
+									
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Получение резидентской визы ОАЭ
+										.price-table-cell.cell-amount от AED 16,000
+										.price-table-cell.cell-commission AED 1,500
+									
+								
+								//single block
+								.price-table-block
+									.price-table-block__title
+										span Получение резидентской визы ОАЭ
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Golden виза 10 лет
+										.price-table-cell.cell-amount от AED 16,000
+										.price-table-cell.cell-commission AED 1,500
+									
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Виза инвестора 2 года
+										.price-table-cell.cell-amount от AED 16,000
+										.price-table-cell.cell-commission AED 1,000
+
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Виза учредителя/работника
+										.price-table-cell.cell-amount от AED 7,000
+										.price-table-cell.cell-commission AED 1,500
+									
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Freelance visa и др.
+										.price-table-cell.cell-amount от AED 7,000
+										.price-table-cell.cell-commission AED 1,500
+
+								//single block
+								.price-table-block
+									.price-table-block__title
+										span Открытие банковского счета
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Сопровождение в открытии корпоративного банковского счета
+										.price-table-cell.cell-amount от AED 15,000
+										.price-table-cell.cell-commission AED 2,000
+									
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Сопровождение в открытии личного банковского счета
+										.price-table-cell.cell-amount от AED 2,500
+										.price-table-cell.cell-commission AED 1,000
+
+								//single block
+								.price-table-block
+									.price-table-block__title
+										span Иные услуги
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Бухгалтерское сопровождение
+										.price-table-cell.cell-amount от AED 1,000 в месяц
+										.price-table-cell.cell-commission 100% цены 1-го месяца
+									
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Консультации по ведению бухгалтерии и налогам
+										.price-table-cell.cell-amount от AED 1,000 за консультацию
+										.price-table-cell.cell-commission AED 500
+									
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Легализация документов
+										.price-table-cell.cell-amount от AED 2,000 за документ
+										.price-table-cell.cell-commission AED 500
+									
+									//row
+									.price-table-row
+										.price-table-cell.cell-name Оформление завещания
+										.price-table-cell.cell-amount от AED 7,000
+										.price-table-cell.cell-commission AED 1,000
+

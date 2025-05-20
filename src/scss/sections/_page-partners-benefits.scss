@@ -1,0 +1,80 @@
+.partners-bonus-cards{
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	&>*{width: 100%;}
+	@media (min-width: 768px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap:remy(16);
+		&>*{width: calc((100% - remy(16))*5/12);}
+		&>*:nth-child(4n+1), &>*:nth-child(4n){width: calc((100% - remy(16))*7/12);}
+	}
+}
+.bonus-card.benefit-card{
+	font-weight: 400;
+	flex-shrink: 0;
+	color: #333;
+	font-family: var(--font-family);
+	font-size: 16px;
+    line-height: 137%;
+	max-width: unset;
+	flex: unset;
+	padding: remy(24);
+	.benefit-card__title{
+		font-size: 28px;
+		line-height: 129%;
+		font-family: var(--second-family);
+		font-weight: 700;
+		color: #333;
+		@media (min-width: 768px) {
+			font-size: remy(32);
+			line-height: 125%;
+		}
+		
+	}
+	@media (min-width: 768px) {
+		font-size: 18px;
+		line-height: 133%;
+		min-height: remy(336);
+		padding: remy(56) remy(40);
+		&:last-child { margin-right: 0;}
+	}
+	@media (min-width: 1200px) {
+	    &:last-child{margin-right: 0;}
+	}
+}
+.bonus-card.bonus-card--bg{
+	     background-image: none;
+		 margin-bottom: remy(20);
+		.txt-18{max-width: 29rem; font-size: 16px;
+        line-height: 137%;}
+		.h-40{
+			font-family: var(--second-family);
+		   font-weight: 700;
+			font-size: remy(28);
+			line-height: 129%;
+			color: #333;
+			margin-bottom: remy(24);
+		}
+	 @media (min-width: 768px) {
+		padding: remy(56) remy(40);
+		background-image:url(../img/cta-bg.webp);
+		background-position:right;
+		background-size: contain;
+		background-size: 70% 100%;
+		.h-40{
+			font-size: 40px;
+		    line-height: 120%;
+		}
+		.txt-18{font-size: 18px;width:45%;
+       line-height: 133%;}
+
+	}
+}
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+       (min-resolution: 192dpi) and (min-width: 768px) {
+  .bonus-card.bonus-card--bg{
+    background-image: url('../img/cta-bg@2x.webp');
+  }
+}

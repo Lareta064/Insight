@@ -64,6 +64,7 @@
 		width: remy(50);
 		height: remy(50);
 		margin-bottom: remy(32);
-		i{ font-size: remy(24);}
+		i{fill: rgb(255, 255, 325); position: relative;
+	z-index: 2; color: white; font-size: remy(24);}
 	}
 }
