@@ -1,14 +1,18 @@
-.contacts-hero{
+.hero.contacts-hero{
+	min-height: unset;
 	.hero-content-wrapper{
 		column-gap: remy(60);
 		justify-content: space-between;
+		flex-direction: column;
+		row-gap: remy(40);
+		@media (min-width: 768px) {
+		flex-direction: row;
+		}
 	}
 	.map-wrapper{
-		width: 45%;
-		max-width: remy(528);
-		height: remy(480);
+		width: 100%;height: remy(323);
 		flex-shrink: 0;
-		
+			max-width: remy(528);
 		position: relative;
 	
 		.map{
@@ -31,6 +35,14 @@
 			top: 50%;
 			left: 0;
 			transform: translate(-15%, -50%);
+			display: none;
+		}
+		@media (min-width: 768px) {
+		   width: 48%;
+		}
+		@media (min-width: 1200px) {
+		  height: remy(480);
+		  &:before{display: block;}
 		}
 	}
 }
