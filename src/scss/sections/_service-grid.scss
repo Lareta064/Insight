@@ -63,3 +63,13 @@
 		.serv-item-box:nth-child(3n+1) .serv-item{border-left: 0;}
 	}
 }
+*.grid-three-column{
+	@media (min-width: 768px) {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		&>*{
+			grid-column: span 4;
+		}
+		
+	}
+}

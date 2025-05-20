@@ -127,3 +127,37 @@
 	@media (min-width: 768px) {margin-top: 1.5rem;}
 
 }
+/*partners-page*/
+.services-price__content.grid-three-column{
+	@media (min-width: 768px) {
+		gap:remy(16);
+	}
+	
+}
+.our-reward .services-price__content{
+	row-gap:remy(16);
+	
+	.serv-price-card{
+		border: 2px solid #dee5eb;
+		&:nth-child(2){background-image:none;}
+		.serv-price__title{
+			font-weight: 400;
+			font-size: remy(20);
+			line-height: 140%;
+			font-family: var(--font-family);
+			@media (min-width: 768px) {
+			font-size: remy(24);
+			}
+		}
+		.serv-price__val{text-align: left;}
+	} 
+	
+}
+.our-reward .services-price__content{
+	@media (min-width: 768px) {
+		&>*{grid-column: span 6;}
+	}
+	@media (min-width: 1200px) {
+		&>*{grid-column: span 4;}
+	}
+}

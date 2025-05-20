@@ -37,11 +37,18 @@
 	@media (min-width: 768px) {
 		
 		&__photo{
-			
 			width: remy(350);
 			aspect-ratio: 7/8;
 			display: block;
 			img{width: 100%;}
+			&:after{
+				content: "";
+				position: absolute;
+				top: 9.875rem;
+				left: -65px;
+				width: 18.75rem;
+				filter: blur(88px);
+			}
 		}
 		&__rang{
 			font-size: remy(18);

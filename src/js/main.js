@@ -193,7 +193,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
    
      //TEAM SLIDER
-
     let teamSlider;
     function toggleSlider() {
         const screenWidth = window.innerWidth;
@@ -227,4 +226,39 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Добавляем слушатель для события изменения размера экрана
     window.addEventListener('resize', toggleSlider);
+
+    //===================.freezone-swiper
+    let freezoneSlider;
+    function toggleFreezoneSlider() {
+        const screenWidth = window.innerWidth;
+    
+        if (screenWidth < 1024) {
+            if (!teamSlider) {
+                
+                freezoneSlider = new Swiper('.freezone-swiper', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16, // Пример настройки отступов между слайдами
+                    grid:{
+                        rows: 4
+                    },
+                    navigation: {
+                      nextEl: ".freezone-swiper-next",
+                      prevEl: ".freezone-swiper-prev",
+                    },
+                });
+            }
+        } else {
+            if (freezoneSlider) {
+                // Уничтожаем слайдер, если экран больше 768px
+                teamSlider.destroy(true, true);
+                teamSlider = null; // Сбрасываем переменную
+            }
+        }
+    }
+    
+    // Вызываем функцию при загрузке страницы
+    toggleFreezoneSlider();
+    
+    // Добавляем слушатель для события изменения размера экрана
+    window.addEventListener('resize', toggleFreezoneSlider);
   })
