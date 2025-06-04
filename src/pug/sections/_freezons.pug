@@ -14,46 +14,44 @@ section.freezons
 			.round-title.border.border-primary Цены
 			.h-40 Мы являемся партнерами следующих фризон:
 		
-		.accordion#accordionFreezones.swiper.freezone-swiper
-			.swiper-wrapper
-				.swiper-slide
-					.card
-						button.card-header#heading1(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapse1' aria-expanded='false' aria-controls='collapse1') Khalifa Industrial Zone Abu Dhabi (KIZAD) –Abu Dhabi
-						
-						#collapse1.collapse(aria-labelledby='heading1' data-parent='#accordionFreezones')
-							.card-body
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				.swiper-slide
-					.card
-						button.card-header#heading2(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapse2' aria-expanded='false' aria-controls='collapse2') Dubai Commercity –<br>Dubai
-						
-						#collapse2.collapse(aria-labelledby='heading2' data-parent='#accordionFreezones')
-							.card-body
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				.swiper-slide
-					.card
-						button.card-header#heading3(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapse3' aria-expanded='false' aria-controls='collapse3') Dubai Commercity –<br>Dubai
-						
-						#collapse3.collapse(aria-labelledby='heading3' data-parent='#accordionFreezones')
-							.card-body
-								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				.swiper-slide
-					+acc-item(4, 'Dubai Multi Commodities Centre (DMCC) – Dubai')
-				.swiper-slide
-					+acc-item(5, 'Dubai South –<br>Dubai')
-				.swiper-slide
-					+acc-item(6, 'Dubai World Trade Centre<br>(DWTC) – Dubai')
-				.swiper-slide
-					+acc-item(7, 'DUQE –<br>Dubai')
-				.swiper-slide
-					+acc-item(8, 'DWC –<br>ubai')
-				.swiper-slide
-					+acc-item(9, 'International Free Zone<br>Authority (IFZA) – Dubai')
-				.swiper-slide
-					+acc-item(10, 'Meydan Free Zone –<br>Dubai')
-				.swiper-slide
-					+acc-item(11, 'Rakez Freezone –<br>Ras Al Khaimah')
-				.swiper-slide
-					+acc-item(12, 'Hamriyah Free Zone –<br>Sharjah')
-				.swiper-slide
-					+acc-item(13, 'Umm Al-Quwain Free<br>Zone – Umm Al Quwain')
+		.accordion#accordionFreezones.freezone-accordion
+			.card
+				button.card-header#heading1(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapse1' aria-expanded='false' aria-controls='collapse1') Khalifa Industrial Zone Abu Dhabi (KIZAD) – Abu Dhabi
+				
+				#collapse1.collapse(aria-labelledby='heading1' data-parent='#accordionFreezones')
+					.card-body
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		
+			.card
+				button.card-header#heading2(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapse2' aria-expanded='false' aria-controls='collapse2') Dubai Commercity – Dubai
+				
+				#collapse2.collapse(aria-labelledby='heading2' data-parent='#accordionFreezones')
+					.card-body
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		
+			.card
+				button.card-header#heading3(type='button'  data-bs-toggle='collapse'  data-bs-target='#collapse3' aria-expanded='false' aria-controls='collapse3') Dubai Commercity – Dubai
+				
+				#collapse3.collapse(aria-labelledby='heading3' data-parent='#accordionFreezones')
+					.card-body
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		
+			+acc-item(4, 'Dubai Multi Commodities Centre (DMCC) – Dubai')
+		
+			+acc-item(5, 'Dubai South – Dubai')
+		
+			+acc-item(6, 'Dubai World Trade Centre (DWTC) – Dubai')
+		
+			+acc-item(7, 'DUQE – Dubai')
+		
+			+acc-item(8, 'DWC – ubai')
+		
+			+acc-item(9, 'International Free Zone Authority (IFZA) – Dubai')
+		
+			+acc-item(10, 'Meydan Free Zone –Dubai')
+		
+			+acc-item(11, 'Rakez Freezone –Ras Al Khaimah')
+		
+			+acc-item(12, 'Hamriyah Free Zone –Sharjah')
+		
+			+acc-item(13, 'Umm Al-Quwain Free Zone – Umm Al Quwain')

@@ -110,11 +110,20 @@
 	}
 }
 .team-wrapper{
-	height: remy(470);
+	height: remy(500);
+	padding-bottom: remy(30);
 	.swiper-slide{width: 358px!important;}
+	.swiper-nav{
+		position: absolute;
+		bottom: remy(10);
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+	}
 	@media (min-width: 1200px) {
 	height: auto;
-	.swiper-nav{display: none!important;}
+	padding-bottom: 0;
+	.swiper-nav{display: none!important; margin-top: 0;}
 	.swiper-wrapper{
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);

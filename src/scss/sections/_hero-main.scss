@@ -1,6 +1,7 @@
 .hero {
 	padding-top: remy(19);
 	min-height: remy(610);
+	&.hero--main{min-height: remy(550);}
 	.btn-wrapper{
 		position: relative;
 	    z-index: 4;

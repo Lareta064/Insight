@@ -2,6 +2,7 @@
 	transition: .3s;
 	display: flex;
 	flex-direction: column;
+	.txt-14{font-size: remy(14);}
 	&:hover{
 		background-color: var(--primary);
 		& *{color: white!important; transition: .3s; }
