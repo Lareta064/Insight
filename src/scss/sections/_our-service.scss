@@ -3,16 +3,20 @@
 	display: flex;
 	flex-direction: column;
 	.txt-14{font-size: remy(14);}
+	
 	&:hover{
 		background-color: var(--primary);
 		& *{color: white!important; transition: .3s; }
 	}
 	&>*{width: 100%;}	
-	.h-32{margin-bottom: remy(28);}
+	 .service-card__num{margin-bottom: .875rem;}
+	.service-card__head{margin-bottom: remy(20);}
 	ul{margin-bottom: remy(8);margin-bottom: remy(30); padding-left: remy(20); flex-grow: 1;}
-	// @media (min-width: 1200px) {
-	// 	width: calc(50% - remy(4));
-	// }
+	@media (min-width: 1200px) {
+	 .service-card__head{display: flex; margin-bottom: 20px; column-gap: 1rem; align-items: flex-start;}
+	 .service-card__num{padding-top: 5px;margin-bottom: 0;}
+	 .h2{margin-bottom: 0;}
+	}
 }
 .our-services{
 	

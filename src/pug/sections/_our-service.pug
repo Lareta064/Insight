@@ -2,8 +2,9 @@ mixin serv-card(num, title, ...li)
 	//single-card
 	.col-sm-6
 		a(href="#!").service-card.br-20.p-4
-			.service-card__num.txt-20.text-muted.mb-4 !{num}
-			.h-32 !{title}
+			.service-card__head
+				.service-card__num.txt-20.text-muted !{num}
+				.h-32 !{title}
 			ul.text-muted.txt-14.lh-150
 				
 				each item in li
