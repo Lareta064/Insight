@@ -9,14 +9,11 @@
 		& *{color: white!important; transition: .3s; }
 	}
 	&>*{width: 100%;}	
-	 .service-card__num{margin-bottom: .875rem;}
-	.service-card__head{margin-bottom: remy(20);}
-	ul{margin-bottom: remy(8);margin-bottom: remy(30); padding-left: remy(20); flex-grow: 1;}
-	@media (min-width: 1200px) {
-	 .service-card__head{display: flex; margin-bottom: 20px; column-gap: 1rem; align-items: flex-start;}
+	.service-card__head{display: flex; margin-bottom: remy(20); column-gap: .785rem; align-items: flex-start;}
 	 .service-card__num{padding-top: 5px;margin-bottom: 0;}
 	 .h2{margin-bottom: 0;}
-	}
+	ul{margin-bottom: remy(8);margin-bottom: remy(30); padding-left: remy(20); flex-grow: 1;}
+	
 }
 .our-services{
 	
