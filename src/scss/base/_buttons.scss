@@ -5,6 +5,8 @@
     border-radius: 12px;
     height: remy(50);
     font-weight: 700;
+    display: flex;
+    align-items:center;
 }
 .btn-primary{
     --bs-btn-color: #fff;
