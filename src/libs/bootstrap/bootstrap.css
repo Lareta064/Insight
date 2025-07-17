@@ -9340,13 +9340,6 @@ footer.footer .social-box {
   color: #000;
 }
 
-.cookie-popup-direction span {
-  display: block;
-  border-radius: 2px;
-  width: 13px;
-  height: 13px;
-  background: linear-gradient(67deg, #f04020 0%, #fab950 100%);
-}
 
 @media (min-width: 576px) {
   .container-sm,

@@ -34,13 +34,16 @@
 		line-height: 175%;
 		align-items: center;
 		color: #000;
-		span{
+		.fake-checkbox{
 			display: block;
 			border-radius: 2px;
 			width: 13px;
 			height: 13px;
-			background: linear-gradient(67deg, #f04020 0%, #fab950 100%);
+			background: linear-gradient(67deg, #6d6c6c 0%, #d3d3d3 100%);
+			position: relative;
+			top:2px;
 		}
+		input:checked+span.fake-checkbox{background: linear-gradient(67deg, #f04020 0%, #fab950 100%);}
 	}
 	@media (min-width: 992px) {
 		border-radius: remy(80) 0 0 remy(80);
@@ -48,5 +51,17 @@
 		
 		bottom: remy(40);
 		.flex-column{margin-left: 0;}
+	}
+}
+.cookie-popup-label{
+	display: flex;
+	position: relative;
+	
+	column-gap:5px;
+	input{
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
 	}
 }
