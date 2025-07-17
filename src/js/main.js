@@ -4,12 +4,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const cook = document.querySelector('#cookie-popup');
   if(cook){
-    const cookClose = document.querySelectorAll('.close-cookie');
-    cookClose.forEach((item)=>{
-      item.addEventListener('click', ()=>{
-        cook.style.display ="none";
-      })
-    })
+   
+    const acceptAllBtn = document.querySelector('#acceptAll');
+    const acceptSelectBtn = document.querySelector('#acceptSelect');
+    const noAcceptBtn = document.querySelector('#noAccept');
+
+    const cookieAccepted = localStorage.getItem('cookieAccepted');
+    const now = new Date();
+    const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000;
+
+    
+    function showCookiePopupIfNeeded() {
+      if (!cookieAccepted || now.getTime() - Number(cookieAccepted) >= thirtyDaysMs) {
+        setTimeout(() => {
+          cook.style.display = 'block';
+        }, 500);
+      }
+    }
+
+    
+    function hideCookiePopup() {
+      cook.style.display = 'none';
+    }
+
+    
+    acceptAllBtn?.addEventListener('click', () => {
+      localStorage.setItem('cookieAccepted', Date.now().toString());
+      hideCookiePopup();
+    });
+
+    acceptSelectBtn?.addEventListener('click', () => {
+      localStorage.setItem('cookieAccepted', Date.now().toString());
+      hideCookiePopup();
+    });
+
+    noAcceptBtn?.addEventListener('click', () => {
+      hideCookiePopup(); 
+    });
+
+    showCookiePopupIfNeeded();
   }
   window.onscroll = function() {
     const mainHeader = document.getElementById("header");
