@@ -67,6 +67,7 @@
 	    column-gap:remy(50);
 	}
 	@media (max-width: 767.99px) {
+		.team-cheff__photo{padding-right: 30px;}
 		.team-cheff__photo.accent-after:after{
 			display: block;
 			background: linear-gradient(237deg, #f04020 0%, #fab950 100%);
@@ -74,6 +75,7 @@
 			bottom: 0;
 			transform: translateY(0);
 			filter: blur(30px);
+			
 		}
 	}
 }

@@ -1,6 +1,16 @@
 // import 'bootstrap';
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  const cook = document.querySelector('#cookie-popup');
+  if(cook){
+    const cookClose = document.querySelectorAll('.close-cookie');
+    cookClose.forEach((item)=>{
+      item.addEventListener('click', ()=>{
+        cook.style.display ="none";
+      })
+    })
+  }
   window.onscroll = function() {
     const mainHeader = document.getElementById("header");
     
