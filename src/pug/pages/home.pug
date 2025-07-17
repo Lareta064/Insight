@@ -180,17 +180,29 @@ block content
 			
 			.cookie-popup-row.d-flex
 				.d-flex.gap-2.txt-12.cookie-popup-direction
-					span
-					| Necessary
+					label.cookie-popup-label
+						input(type="checkbox" name="sett1")
+						span.fake-checkbox
+						span Necessary
+					
 				.d-flex.gap-2.txt-12.cookie-popup-direction
-					span
-					| Analytics
+					label.cookie-popup-label
+						input(type="checkbox" name="sett2")
+						span.fake-checkbox
+						span Analytics
+					
+					
 				.d-flex.gap-2.txt-12.cookie-popup-direction
-					span
-					| Preferences
+					label.cookie-popup-label
+						input(type="checkbox" name="sett2")
+						span.fake-checkbox
+						span Preferences
+					
 				.d-flex.gap-2.txt-12.cookie-popup-direction
-					span
-					| Marketing
-
+					label.cookie-popup-label
+						input(type="checkbox" name="sett2")
+						span.fake-checkbox
+						span Marketing
+					
 block variables
 	-var title = "INSIGHT";
